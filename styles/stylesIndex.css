@@ -44,15 +44,27 @@ hr {
     margin-bottom: 10px;
 }
 
+
+/* El movil */
+
 @media (max-width: 700px) {
     .cabecera {
         width: 100%;
     }
+    .noticia {
+        border: 3px solid rgba(255, 255, 255, 0.116);
+    }
 }
+
+
+/* El grande */
 
 @media (min-width: 701px) {
     .cabecera {
         width: 70%;
+    }
+    .noticia {
+        border: 1px solid rgba(255, 255, 255, 0.116);
     }
 }
 
@@ -140,7 +152,6 @@ hr {
 }
 
 .noticia {
-    border: 1px solid rgba(255, 255, 255, 0.116);
     border-radius: 15px 15px 0px 0px;
     margin: 5%;
     padding: 5%;
