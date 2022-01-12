@@ -54,6 +54,45 @@ hr {
     .noticia {
         border: 3px solid rgba(255, 255, 255, 0.116);
     }
+    .cabecera {
+        position: fixed;
+        top: 0px;
+        height: 20px;
+        padding: 10px 0px;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #planeta,
+    #planeta2 {
+        display: none;
+    }
+    #navBar {
+        position: relative;
+        top: -10px;
+    }
+    #navBar>li {
+        margin: 0;
+        float: left;
+        width: 20%;
+        background: none;
+    }
+    #navBar>li>a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background: none;
+    }
+    #navBar>li>a:hover {
+        background-color: rgba(255, 255, 255, 0.116);
+        border-radius: 15px 15px 0px 0px;
+        transition: background 0.5s ease-out;
+    }
+    #navHR {
+        display: none;
+    }
 }
 
 
@@ -62,22 +101,40 @@ hr {
 @media (min-width: 701px) {
     .cabecera {
         width: 70%;
+        position: fixed;
+        top: 0px;
+        height: 110px;
+        padding: 10px 0px;
+        background-image: url("../imgs/background.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .noticia {
         border: 1px solid rgba(255, 255, 255, 0.116);
     }
-}
-
-.cabecera {
-    position: fixed;
-    top: 0px;
-    height: 110px;
-    padding: 10px 0px;
-    background-image: url("../imgs/background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    #navBar>li {
+        margin: 0;
+        float: left;
+        width: 20%;
+        padding-top: 20px;
+        background: none;
+    }
+    #navBar>li>a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background: none;
+    }
+    #navBar>li>a:hover {
+        background-color: rgba(255, 255, 255, 0.116);
+        border-radius: 15px 15px 0px 0px;
+        transition: background 0.5s ease-out;
+    }
+    #navHR {
+        margin-top: 53px;
+    }
 }
 
 .pie {
@@ -124,31 +181,6 @@ hr {
 #navBar {
     text-align: center;
     width: 100%;
-}
-
-#navBar>li {
-    margin: 0;
-    float: left;
-    width: 20%;
-    padding-top: 20px;
-    background: none;
-}
-
-#navBar>li>a {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    background: none;
-}
-
-#navBar>li>a:hover {
-    background-color: rgba(255, 255, 255, 0.116);
-    border-radius: 15px 15px 0px 0px;
-    transition: background 0.5s ease-out;
-}
-
-#navHR {
-    margin-top: 53px;
 }
 
 .noticia {
