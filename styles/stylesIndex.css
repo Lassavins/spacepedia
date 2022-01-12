@@ -1,0 +1,160 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 701px) {
+    body {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+body {
+    background-image: url("../imgs/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: sticky;
+}
+
+hr {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.116);
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .cabecera {
+        width: 100%;
+    }
+}
+
+@media (min-width: 701px) {
+    .cabecera {
+        width: 70%;
+    }
+}
+
+.cabecera {
+    position: fixed;
+    top: 0px;
+    height: 110px;
+    padding: 10px 0px;
+    background-image: url("../imgs/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pie {
+    position: fixed;
+    bottom: 4px;
+}
+
+.pie>p {
+    color: rgba(255, 255, 255, 0.116);
+    font-style: italic;
+    font-size: smaller;
+}
+
+
+/* DIBUJO PLANETA */
+
+#planeta {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    top: 18px;
+}
+
+#planeta2 {
+    height: 5px;
+    width: 80px;
+    transform: rotate(-30deg);
+    background-color: rgb(128, 128, 128);
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    top: -8px;
+}
+
+#imgInicio {
+    display: block;
+    border: 1px solid red;
+    text-align: center;
+}
+
+#navBar {
+    text-align: center;
+    width: 100%;
+}
+
+#navBar>li {
+    margin: 0;
+    float: left;
+    width: 20%;
+    padding-top: 20px;
+    background: none;
+}
+
+#navBar>li>a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background: none;
+}
+
+#navBar>li>a:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 15px 15px 0px 0px;
+    transition: background 0.5s ease-out;
+}
+
+#navHR {
+    margin-top: 53px;
+}
+
+.noticia {
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    border-radius: 15px 15px 0px 0px;
+    margin: 5%;
+    padding: 5%;
+    background: none;
+}
+
+.noticia>h4 {
+    font-weight: lighter;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.664);
+    float: right;
+}
+
+.noticiario {
+    background: none;
+    padding-top: 115px;
+}
