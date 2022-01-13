@@ -93,7 +93,7 @@ hr {
     .cabecera {
         position: fixed;
         top: -10px;
-        height: 117px;
+        height: 122px;
         width: 70%;
         padding: 10px 15% 10px 15%;
         background-image: url("../imgs/background.jpg");
@@ -142,6 +142,7 @@ hr {
         width: 130px;
         display: block;
         margin: auto;
+        padding-top: 1%;
     }
 }
 
