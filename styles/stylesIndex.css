@@ -4,27 +4,8 @@
     padding: 0px;
     margin: 0px;
     color: white;
-}
-
-ul,
-li,
-a {
     text-decoration: none;
     list-style: none;
-}
-
-@media (max-width: 700px) {
-    body {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-}
-
-@media (min-width: 701px) {
-    body {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
 }
 
 body {
@@ -48,13 +29,16 @@ hr {
 /* El movil */
 
 @media (max-width: 700px) {
+    .logo {
+        width: 50px;
+        position: relative;
+        top: -8px;
+        left: 10px;
+        float: left;
+        margin-right: 7%;
+    }
     .cabecera {
         width: 100%;
-    }
-    .noticia {
-        border: 3px solid rgba(255, 255, 255, 0.116);
-    }
-    .cabecera {
         position: fixed;
         top: 0px;
         height: 20px;
@@ -64,10 +48,16 @@ hr {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        overflow: hidden;
     }
-    #planeta,
-    #planeta2 {
-        display: none;
+    .noticia {
+        border: 3px solid rgba(255, 255, 255, 0.116);
+        margin: 2%;
+        padding: 2%;
+        border-radius: 15px;
+    }
+    .noticiario {
+        margin-top: 10%;
     }
     #navBar {
         position: relative;
@@ -76,18 +66,15 @@ hr {
     #navBar>li {
         margin: 0;
         float: left;
-        width: 20%;
-        background: none;
+        width: 15%;
     }
     #navBar>li>a {
         display: block;
         padding-top: 10px;
-        padding-bottom: 5px;
-        background: none;
+        padding-bottom: 12px;
     }
     #navBar>li>a:hover {
         background-color: rgba(255, 255, 255, 0.116);
-        border-radius: 15px 15px 0px 0px;
         transition: background 0.5s ease-out;
     }
     #navHR {
@@ -99,10 +86,14 @@ hr {
 /* El grande */
 
 @media (min-width: 701px) {
+    body {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
     .cabecera {
         width: 70%;
         position: fixed;
-        top: 0px;
+        top: -10px;
         height: 110px;
         padding: 10px 0px;
         background-image: url("../imgs/background.jpg");
@@ -111,14 +102,22 @@ hr {
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+    .noticiario {
+        margin-top: 160px;
+    }
     .noticia {
         border: 1px solid rgba(255, 255, 255, 0.116);
+        border-radius: 15px 15px 0px 0px;
+        margin: 5%;
+        padding: 5%;
+        background: none;
     }
     #navBar>li {
         margin: 0;
         float: left;
         width: 20%;
-        padding-top: 20px;
+        position: relative;
+        top: -30px;
         background: none;
     }
     #navBar>li>a {
@@ -133,48 +132,23 @@ hr {
         transition: background 0.5s ease-out;
     }
     #navHR {
-        margin-top: 53px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.116);
+        position: relative;
+        top: -30px;
     }
-}
-
-.pie {
-    position: fixed;
-    bottom: 4px;
+    .logo {
+        width: 130px;
+        display: block;
+        margin: auto;
+    }
 }
 
 .pie>p {
     color: rgba(255, 255, 255, 0.116);
     font-style: italic;
     font-size: smaller;
-}
-
-
-/* DIBUJO PLANETA */
-
-#planeta {
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-radius: 100%;
-    margin: auto;
-    position: relative;
-    top: 18px;
-}
-
-#planeta2 {
-    height: 5px;
-    width: 80px;
-    transform: rotate(-30deg);
-    background-color: rgb(128, 128, 128);
-    border-radius: 100%;
-    margin: auto;
-    position: relative;
-    top: -8px;
-}
-
-#imgInicio {
-    display: block;
-    border: 1px solid red;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -183,21 +157,10 @@ hr {
     width: 100%;
 }
 
-.noticia {
-    border-radius: 15px 15px 0px 0px;
-    margin: 5%;
-    padding: 5%;
-    background: none;
-}
-
 .noticia>h4 {
     font-weight: lighter;
     font-size: 10px;
     color: rgba(255, 255, 255, 0.664);
     float: right;
-}
-
-.noticiario {
-    background: none;
-    padding-top: 115px;
+    overflow: hidden;
 }
