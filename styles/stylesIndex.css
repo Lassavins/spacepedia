@@ -29,6 +29,9 @@ hr {
 /* El movil */
 
 @media (max-width: 700px) {
+    hr {
+        height: 3px;
+    }
     .logo {
         width: 50px;
         position: relative;
