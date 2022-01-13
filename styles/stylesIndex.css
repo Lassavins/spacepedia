@@ -14,7 +14,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: sticky;
 }
 
 hr {
@@ -30,7 +29,9 @@ hr {
 
 @media (max-width: 700px) {
     hr {
-        height: 3px;
+        height: 5px;
+        border-radius: 100px;
+        background-color: rgba(255, 255, 255, 0.39);
     }
     .logo {
         width: 50px;
@@ -54,13 +55,13 @@ hr {
         overflow: hidden;
     }
     .noticia {
-        border: 3px solid rgba(255, 255, 255, 0.116);
+        border: 5px solid rgba(255, 255, 255, 0.39);
         margin: 2%;
         padding: 2%;
         border-radius: 15px;
     }
     .noticiario {
-        margin-top: 10%;
+        margin-top: 60px;
     }
     #navBar {
         position: relative;
@@ -89,16 +90,12 @@ hr {
 /* El grande */
 
 @media (min-width: 701px) {
-    body {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
     .cabecera {
-        width: 70%;
         position: fixed;
         top: -10px;
-        height: 110px;
-        padding: 10px 0px;
+        height: 117px;
+        width: 70%;
+        padding: 10px 15% 10px 15%;
         background-image: url("../imgs/background.jpg");
         background-position: center;
         background-size: cover;
@@ -107,6 +104,7 @@ hr {
     }
     .noticiario {
         margin-top: 160px;
+        width: 100%;
     }
     .noticia {
         border: 1px solid rgba(255, 255, 255, 0.116);
