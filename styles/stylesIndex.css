@@ -49,6 +49,9 @@ hr {
 /* El movil */
 
 @media (max-width: 700px) {
+    body {
+        background-attachment: fixed;
+    }
     hr {
         height: 5px;
         border-radius: 100px;
@@ -132,6 +135,7 @@ hr {
         background: none;
     }
     .cabecera__opciones>li>a {
+        color: rgba(255, 255, 255, 0.664);
         display: block;
         padding-top: 6px;
         padding-bottom: 6px;
@@ -139,8 +143,9 @@ hr {
     }
     .cabecera__opciones>li>a:hover {
         background-color: rgba(255, 255, 255, 0.116);
+        color: white;
         border-radius: 50px;
-        transition: background 0.5s ease-out;
+        transition: all 0.5s ease-out;
     }
     .cabecera:hover .cabecera__separador {
         background-color: rgba(255, 255, 255, 0.116);
