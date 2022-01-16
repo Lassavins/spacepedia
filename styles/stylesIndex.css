@@ -36,6 +36,10 @@ label {
 /* El grande */
 
 @media (min-width: 710px) {
+    label>p {
+        overflow: hidden;
+        max-height: 145px;
+    }
     .noticiario {
         position: fixed;
         text-align: center;
@@ -43,7 +47,7 @@ label {
         margin-top: 70px;
         top: 130px;
         right: 23px;
-        height: 600px;
+        height: 100%;
         overflow: auto;
     }
     .noticiario__noticia {
@@ -76,10 +80,6 @@ label {
         width: 100%;
         height: 100%;
     }
-    p {
-        height: 100%;
-        overflow: hidden;
-    }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
         display: inline-block;
         margin: 1%;
@@ -93,7 +93,14 @@ label {
         z-index: 2;
         overflow: scroll;
     }
+    .noticia__leerMas--checkBox:checked~.noticiario__noticia>label>p {
+        max-height: none;
+    }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia:hover {
         padding: 5%;
+    }
+    .noticiario__espacioInferior {
+        width: 100%;
+        height: 260px;
     }
 }
