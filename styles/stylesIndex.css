@@ -130,12 +130,14 @@ label {
         font-weight: bolder;
         text-align: left;
         border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+        transition: all 0.5s ease-out;
     }
     .cabecera__opciones>li>a {
         width: 100%;
         display: block;
         padding-top: 10px;
         padding-bottom: 12px;
+        transition: all 0.5s ease-out;
     }
     .cabecera__opciones>li>a:hover {
         font-size: larger;
