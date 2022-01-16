@@ -38,7 +38,7 @@ label {
 @media (min-width: 710px) {
     label>p {
         overflow: hidden;
-        max-height: 145px;
+        max-height: 143px;
     }
     .noticiario {
         position: fixed;
