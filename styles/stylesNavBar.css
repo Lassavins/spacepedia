@@ -17,7 +17,7 @@
 
 /* El movil */
 
-@media (max-width: 709px) {
+@media (max-width: 960px) {
     .cabecera {
         width: 100%;
         height: 35px;
@@ -100,7 +100,7 @@
 
 /* El grande */
 
-@media (min-width: 710px) {
+@media (min-width: 961px) {
     .cabecera {
         width: 70%;
         margin: auto 15% auto 15%;

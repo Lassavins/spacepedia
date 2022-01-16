@@ -15,7 +15,7 @@ label {
 
 /* El movil */
 
-@media (max-width: 709px) {
+@media (max-width: 960px) {
     hr {
         height: 2px;
         border-radius: 100px;
@@ -35,7 +35,7 @@ label {
 
 /* El grande */
 
-@media (min-width: 710px) {
+@media (min-width: 961px) {
     label>p {
         overflow: hidden;
         max-height: 143px;
