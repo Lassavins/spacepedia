@@ -1,0 +1,151 @@
+/* BARRA DE NAVEGACIÓN */
+
+#activar,
+.checkbox__boton {
+    display: none;
+}
+
+.cabecera {
+    position: fixed;
+}
+
+.cabecera__opciones {
+    text-align: center;
+    width: 100%;
+}
+
+
+/* El movil */
+
+@media (max-width: 700px) {
+    .cabecera {
+        width: 100%;
+        height: 35px;
+        top: 0px;
+        padding: 10px 0px;
+        background-color: black;
+        overflow: hidden;
+        text-align: center;
+        transition: height 0.5s;
+        z-index: 1;
+    }
+    #activar:checked~.cabecera {
+        height: 100%;
+        background-color: rgb(19, 10, 27);
+        transition: all 0.5s;
+    }
+    .checkbox__boton {
+        float: left;
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        position: relative;
+        top: -10px;
+        left: 10px;
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 5px;
+        text-align: center;
+        transition: all 0.3s;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    #activar:checked~.checkbox__boton {
+        transform: rotate(90deg);
+        transition: all 0.3s;
+    }
+    .cabecera__logo {
+        width: 50px;
+        position: relative;
+        top: -2px;
+        display: inline;
+    }
+    .cabecera__opciones {
+        position: relative;
+        top: -10px;
+        margin-top: 10%;
+    }
+    .cabecera__opciones>li {
+        width: 90%;
+        margin: 5%;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+        transition: all 0.5s ease-out;
+    }
+    .cabecera__opciones>li:hover {
+        width: 80%;
+        transition: all 0.5s ease-out;
+    }
+    .cabecera__opciones>li>a {
+        width: 100%;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        transition: all 0.5s ease-out;
+    }
+    .cabecera__opciones>li>a:hover {
+        font-size: larger;
+        transition: all 0.5s ease-out;
+    }
+    .cabecera__separador {
+        display: none;
+    }
+}
+
+
+/* El grande */
+
+@media (min-width: 701px) {
+    .cabecera {
+        width: 70%;
+        margin: 8px 15% auto 15%;
+        overflow: hidden;
+    }
+    .cabecera__logo {
+        width: 130px;
+        display: block;
+        margin: auto;
+        padding-top: 25px;
+    }
+    .cabecera__opciones>li {
+        margin: 0;
+        float: left;
+        width: 20%;
+        font-size: larger;
+    }
+    .cabecera__opciones>li>a {
+        color: rgba(255, 255, 255, 0.664);
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        background: none;
+        transition: all 0.5s ease-out;
+    }
+    .cabecera__opciones>li>a:hover {
+        background-color: rgba(255, 255, 255, 0.116);
+        color: white;
+        border-radius: 50px;
+        transition: all 0.5s ease-out;
+    }
+    .cabecera:hover .cabecera__separador {
+        background-color: rgba(255, 255, 255, 0.116);
+        border-radius: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        transition: all 0.5s ease-out;
+    }
+    .cabecera__separador {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.116);
+        position: relative;
+        top: -40px;
+        z-index: -1;
+        transition: all 0.5s ease-out;
+    }
+}
