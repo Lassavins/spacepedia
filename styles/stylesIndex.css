@@ -15,7 +15,7 @@ label {
 
 /* El movil */
 
-@media (max-width: 700px) {
+@media (max-width: 709px) {
     hr {
         height: 2px;
         border-radius: 100px;
@@ -35,36 +35,41 @@ label {
 
 /* El grande */
 
-@media (min-width: 701px) {
+@media (min-width: 710px) {
     .noticiario {
-        position: relative;
+        position: fixed;
         text-align: center;
-        width: 88%;
-        padding: 5%;
-        margin: auto;
-        top: 200px;
+        width: 100%;
+        margin-top: 70px;
+        top: 130px;
+        right: 23px;
         height: 600px;
         overflow: auto;
     }
     .noticiario__noticia {
-        position: relative;
         text-align: left;
+        display: inline-block;
         border-radius: 15px;
+        padding: 10%;
         width: 250px;
         height: 250px;
-        margin: 2%;
-        padding: 3%;
         overflow: hidden;
-        float: left;
         transition: all 0.5s ease-out;
         cursor: pointer;
     }
     .noticiario__noticia:hover {
         background-color: rgba(255, 255, 255, 0.116);
-        padding-left: 4%;
-        padding-right: 4%;
-        margin-left: 1%;
+        padding-left: 14%;
+        padding-right: 14%;
+        margin-left: -4%;
         margin-right: 1%;
+    }
+    .noticiario__cajaFloat {
+        width: 260px;
+        height: 260px;
+        padding: 4%;
+        display: inline-block;
+        text-align: center;
     }
     .noticia__leerMas {
         display: inline-block;
@@ -76,14 +81,19 @@ label {
         overflow: hidden;
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
-        margin: 0;
-        width: 90%;
+        display: inline-block;
+        margin: 1%;
+        padding: 5%;
+        width: 88%;
         height: 100%;
         position: fixed;
         top: 201px;
-        left: 1%;
-        right: 1%;
+        left: 0%;
         background-color: rgb(16, 6, 26);
         z-index: 2;
+        overflow: scroll;
+    }
+    .noticia__leerMas--checkBox:checked~.noticiario__noticia:hover {
+        padding: 5%;
     }
 }
