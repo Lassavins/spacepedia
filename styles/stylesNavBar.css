@@ -17,7 +17,7 @@
 
 /* El movil */
 
-@media (max-width: 960px) {
+@media (max-width: 767px) {
     .cabecera {
         width: 100%;
         height: 35px;
@@ -58,9 +58,9 @@
         transition: all 0.3s;
     }
     .cabecera__logo {
-        width: 50px;
+        width: 300px;
         position: relative;
-        top: -2px;
+        top: -14px;
         display: inline;
     }
     .cabecera__opciones {
@@ -100,14 +100,14 @@
 
 /* El grande */
 
-@media (min-width: 961px) {
+@media (min-width: 768px) {
     .cabecera {
         width: 70%;
         margin: auto 15% auto 15%;
         overflow: hidden;
     }
     .cabecera__logo {
-        width: 130px;
+        width: 500px;
         display: block;
         margin: auto;
         padding-top: 25px;

@@ -1,0 +1,10 @@
+.contenido {
+    padding-top: 5%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    margin-top: 70px;
+    top: 130px;
+    height: 100%;
+    overflow: auto;
+}
