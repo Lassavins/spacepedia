@@ -15,7 +15,7 @@ label {
 
 /* El movil */
 
-@media (max-width: 960px) {
+@media (max-width: 767px) {
     hr {
         height: 2px;
         border-radius: 100px;
@@ -26,16 +26,30 @@ label {
         margin-top: 100px;
     }
     .noticiario__noticia {
-        margin: 2%;
-        padding: 2%;
+        margin: 4%;
+        padding: 5%;
         border-radius: 15px;
+        height: 79px;
+        overflow: hidden;
+        border-bottom: 5vw solid rgba(255, 255, 255, 0);
+        transition: all 0.5s;
+    }
+    .noticiario__noticia:hover {
+        background-color: rgba(255, 255, 255, 0.116);
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .noticia__leerMas--checkBox:checked~.noticiario__noticia {
+        height: auto;
     }
 }
 
 
 /* El grande */
 
-@media (min-width: 961px) {
+@media (min-width: 768px) {
     label>p {
         overflow: hidden;
         max-height: 143px;
@@ -56,10 +70,11 @@ label {
         border-radius: 15px;
         padding: 10%;
         width: 250px;
-        height: 250px;
+        height: 210px;
         overflow: hidden;
-        transition: all 0.5s ease-out;
+        transition: all 0.5s;
         cursor: pointer;
+        border-bottom: 25px solid rgba(255, 255, 255, 0);
     }
     .noticiario__noticia:hover {
         background-color: rgba(255, 255, 255, 0.116);
@@ -89,7 +104,11 @@ label {
         position: fixed;
         top: 201px;
         left: 0%;
-        background-color: rgb(16, 6, 26);
+        background-image: url("../imgs/backgroundNoticia.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         z-index: 2;
         overflow: scroll;
     }
