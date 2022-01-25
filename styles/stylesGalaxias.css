@@ -1,140 +1,54 @@
 /* INDEX */
 
-.noticiario__noticia {
-    background-color: rgba(255, 255, 255, 0.068);
+.galaxia {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 768px;
+    padding-top: 200px;
+    font-size: larger;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.noticia__leerMas--checkBox {
-    display: none;
+#uno {
+    background-image: url(../imgs/milkyWay.jpeg);
 }
 
-label {
-    cursor: pointer;
+#dos {
+    background-image: url(../imgs/canisMayor.jpeg);
+}
+
+#tres {
+    background-image: url(../imgs/enanaSagitario.jpeg);
+}
+
+#cuatro {
+    background-image: url(../imgs/magallanes.jpeg);
+}
+
+.galaxia__texto {
+    height: 400px;
+    overflow: scroll;
+    margin-top: 145px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 43.5%;
+}
+
+#cuatro>div {
+    margin-top: 365px;
 }
 
 
 /* El movil */
 
-@media (max-width: 767px) {
-    hr {
-        height: 2px;
-        border-radius: 100px;
-        background-color: rgba(255, 255, 255, 0.39);
-    }
-    /* Noticias */
-    .noticiario {
-        margin-top: 80px;
-    }
-    .noticiario__noticia {
-        margin: 2%;
-        padding: 5%;
-        border-radius: 15px;
-        height: 79px;
-        overflow: hidden;
-        border-bottom: 5vw solid rgba(255, 255, 255, 0);
-        transition: all 0.5s;
-    }
-    .noticiario__noticia:hover {
-        background-color: rgba(255, 255, 255, 0.116);
-        margin-left: 0%;
-        margin-right: 0%;
-        padding-left: 7%;
-        padding-right: 7%;
-    }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia {
-        height: auto;
-    }
-}
+@media (max-width: 767px) {}
 
 
 /* El grande */
 
-@media (min-width: 768px) {
-    label>p {
-        overflow: hidden;
-        max-height: 143px;
-    }
-    .noticiario {
-        position: fixed;
-        text-align: center;
-        width: 100%;
-        margin-top: 20px;
-        padding-top: 20px;
-        top: 155px;
-        height: 100%;
-        overflow: auto;
-    }
-    .noticiario__noticia {
-        /* Meto cuadrados con las galaxias y luego
-        articulos de full length sin esquinas redondas
-        con un volver arriba? */
-        height: 30px;
-        padding: 5%;
-        text-align: left;
-        display: inline-block;
-        border-radius: 15px;
-        overflow: hidden;
-        transition: all 0.3s;
-        cursor: pointer;
-        border-bottom: 25px solid rgba(255, 255, 255, 0);
-    }
-    .noticiario__noticia:hover {
-        background-color: rgba(255, 255, 255, 0.116);
-        padding: 7%;
-        margin: -2%;
-    }
-    .noticiario__cajaFloat:hover {
-        margin: 0px;
-    }
-    .noticiario__cajaFloat {
-        width: 80%;
-        padding: 1%;
-        display: inline-block;
-        text-align: center;
-    }
-    .noticia__leerMas {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia {
-        display: inline-block;
-        margin: 1%;
-        padding: 5%;
-        width: 88%;
-        height: 100%;
-        position: fixed;
-        top: 130px;
-        left: 0%;
-        background-image: url("../imgs/backgroundNoticia.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        z-index: 2;
-        overflow: scroll;
-        opacity: 1;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: 0.8s;
-    }
-    @keyframes fadeInOpacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia>label>p {
-        max-height: none;
-    }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia:hover {
-        padding: 5%;
-    }
-    .noticiario__espacioInferior {
-        width: 100%;
-        height: 260px;
-    }
-}
+@media (min-width: 768px) {}

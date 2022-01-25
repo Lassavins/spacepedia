@@ -102,8 +102,13 @@
 @media (min-width: 768px) {
     .cabecera {
         width: 70%;
+        height: 180px;
         margin: auto 15% auto 15%;
         overflow: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        z-index: 3;
     }
     .cabecera__logo {
         width: 500px;
