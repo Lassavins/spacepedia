@@ -23,23 +23,24 @@ label {
     }
     /* Noticias */
     .noticiario {
-        margin-top: 100px;
+        margin-top: 80px;
     }
     .noticiario__noticia {
-        margin: 4%;
+        margin: 2%;
         padding: 5%;
         border-radius: 15px;
-        height: 79px;
+        height: 92.1px;
         overflow: hidden;
         border-bottom: 5vw solid rgba(255, 255, 255, 0);
         transition: all 0.5s;
     }
     .noticiario__noticia:hover {
         background-color: rgba(255, 255, 255, 0.116);
-        margin-left: 2%;
-        margin-right: 2%;
-        padding-left: 7%;
-        padding-right: 7%;
+        margin: 1%;
+        padding: 6%;
+    }
+    .noticiario__cajaFloat {
+        border: 1px solid rgba(255, 0, 0, 0);
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
         height: auto;
@@ -58,35 +59,32 @@ label {
         position: fixed;
         text-align: center;
         width: 100%;
-        margin-top: 70px;
-        top: 130px;
-        right: 23px;
+        margin-top: 20px;
+        padding-top: 20px;
+        top: 155px;
         height: 100%;
         overflow: auto;
     }
     .noticiario__noticia {
+        height: 77%;
+        padding: 7%;
         text-align: left;
         display: inline-block;
         border-radius: 15px;
-        padding: 10%;
-        width: 250px;
-        height: 210px;
         overflow: hidden;
-        transition: all 0.5s;
+        transition: all 0.3s;
         cursor: pointer;
         border-bottom: 25px solid rgba(255, 255, 255, 0);
     }
     .noticiario__noticia:hover {
         background-color: rgba(255, 255, 255, 0.116);
-        padding-left: 14%;
-        padding-right: 14%;
-        margin-left: -4%;
-        margin-right: 1%;
+        padding: 9%;
+        margin: -2%;
     }
     .noticiario__cajaFloat {
         width: 260px;
         height: 260px;
-        padding: 4%;
+        padding: 1%;
         display: inline-block;
         text-align: center;
     }
@@ -102,7 +100,7 @@ label {
         width: 88%;
         height: 100%;
         position: fixed;
-        top: 201px;
+        top: 130px;
         left: 0%;
         background-image: url("../imgs/backgroundNoticia.png");
         background-position: center;
@@ -111,6 +109,19 @@ label {
         background-attachment: fixed;
         z-index: 2;
         overflow: scroll;
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 0.8s;
+    }
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia>label>p {
         max-height: none;
