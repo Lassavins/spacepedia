@@ -94,7 +94,6 @@ label {
         height: 100%;
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
-        border-radius: 0px;
         display: inline-block;
         margin: 1%;
         padding: 5%;
@@ -107,7 +106,6 @@ label {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        z-index: 2;
         overflow: scroll;
         opacity: 1;
         animation-name: fadeInOpacity;

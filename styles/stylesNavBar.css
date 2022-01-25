@@ -27,7 +27,6 @@
         overflow: hidden;
         text-align: center;
         transition: height 0.5s;
-        z-index: 1;
     }
     #activar:checked~.cabecera {
         height: 100%;
@@ -105,10 +104,6 @@
         height: 180px;
         margin: auto 15% auto 15%;
         overflow: hidden;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        z-index: 3;
     }
     .cabecera__logo {
         width: 500px;
