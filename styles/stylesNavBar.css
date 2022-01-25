@@ -32,7 +32,6 @@
     #activar:checked~.cabecera {
         height: 100%;
         background-color: rgb(19, 10, 27);
-        transition: all 0.5s;
     }
     .checkbox__boton {
         float: left;

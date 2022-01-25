@@ -83,7 +83,7 @@ label {
     }
     .noticiario__cajaFloat {
         width: 260px;
-        height: 260px;
+        height: 258.7px;
         padding: 1%;
         display: inline-block;
         text-align: center;
@@ -94,13 +94,13 @@ label {
         height: 100%;
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
+        border-radius: 0px;
         display: inline-block;
         margin: 1%;
         padding: 5%;
-        width: 88%;
         height: 100%;
         position: fixed;
-        top: 130px;
+        top: 123px;
         left: 0%;
         background-image: url("../imgs/backgroundNoticia.png");
         background-position: center;

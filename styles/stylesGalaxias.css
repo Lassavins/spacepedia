@@ -65,6 +65,10 @@ label {
         overflow: auto;
     }
     .noticiario__noticia {
+        /* Meto cuadrados con las galaxias y luego
+        articulos de full length sin esquinas redondas
+        con un volver arriba? */
+        height: 30px;
         padding: 5%;
         text-align: left;
         display: inline-block;
