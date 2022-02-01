@@ -1,75 +1,88 @@
 /* INDEX */
 
 p {
+    padding: 5%;
+    background-color: rgba(73, 72, 72, 0.322);
+}
+
+.galaxia>.galaxia__texto>hr {
+    width: 100%;
+    border: none;
     border-radius: 15px;
-    margin-left: -15%;
-    margin-right: -15%;
-    padding: 10% 15% 2% 15%;
-    background-color: rgba(255, 255, 255, 0.116);
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.356);
 }
 
 .cabecera {
     z-index: 1;
 }
 
-.galaxia {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 968px;
-    font-size: larger;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.separador {
-    height: 85%;
-}
-
-#uno {
-    background-image: url(../imgs/milkyWay.jpeg);
-}
-
-#dos {
-    background-image: url(../imgs/canisMayor.jpeg);
-}
-
-#tres {
-    background-image: url(../imgs/enanaSagitario.jpeg);
-}
-
-#cuatro {
-    background-image: url(../imgs/magallanes.jpeg);
-    height: 770px;
-}
-
-#cuatro>div {
-    margin-top: 0px;
-    height: 520px;
-}
-
-#cuatro>div>div {
-    height: 85%;
-}
-
-.galaxia__texto {
-    position: relative;
-    top: 205px;
-    height: 56%;
-    overflow: scroll;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
 
 /* El movil */
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .galaxia {
+        width: auto;
+    }
+    .galaxia__texto {
+        top: 100px;
+        margin-bottom: 50px;
+    }
+    .galaxia__texto>p {
+        font-size: larger;
+    }
+    .galaxia__texto>h1,
+    .galaxia__texto>h3 {
+        position: sticky;
+        text-align: center;
+        background-color: black;
+        margin-left: -25%;
+        margin-right: -25%;
+    }
+}
 
 
 /* El grande */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .galaxia {
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 968px;
+        font-size: larger;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .separador {
+        height: 85%;
+    }
+    #uno {
+        background-image: url(../imgs/milkyWay.jpeg);
+    }
+    #dos {
+        background-image: url(../imgs/canisMayor.jpeg);
+    }
+    #tres {
+        background-image: url(../imgs/enanaSagitario.jpeg);
+    }
+    #cuatro {
+        background-image: url(../imgs/magallanes.jpeg);
+        height: 900px;
+    }
+    #cuatro>div {
+        height: 64.4%;
+        top: 31%;
+    }
+    .galaxia__texto {
+        position: relative;
+        top: 172px;
+        height: 580.8px;
+        overflow: scroll;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
