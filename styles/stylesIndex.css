@@ -1,7 +1,7 @@
 /* INDEX */
 
 .noticiario__noticia {
-    background-color: rgba(255, 255, 255, 0.068);
+    background-color: rgba(32, 32, 32, 0.486);
 }
 
 .noticia__leerMas--checkBox {
@@ -101,7 +101,7 @@ label {
         position: fixed;
         top: 123px;
         left: 0%;
-        background-image: url("../imgs/backgroundNoticia.png");
+        background-image: url("../imgs/backgroundNoticia.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
