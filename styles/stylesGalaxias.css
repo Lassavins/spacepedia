@@ -2,6 +2,7 @@
 
 p {
     padding: 5%;
+    margin: 5%;
     background-color: rgba(73, 72, 72, 0.322);
 }
 
@@ -20,37 +21,21 @@ p {
 #uno,
 #headerUno {
     background-image: url(../imgs/milkyWay.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 #dos,
 #headerDos {
     background-image: url(../imgs/canisMayor.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 #tres,
 #headerTres {
     background-image: url(../imgs/enanaSagitario.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 #cuatro,
 #headerCuatro {
     background-image: url(../imgs/magallanes.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 
@@ -90,6 +75,19 @@ p {
 /* El grande */
 
 @media (min-width: 768px) {
+    #uno,
+    #headerUno,
+    #dos,
+    #headerDos,
+    #tres,
+    #headerTres,
+    #cuatro,
+    #headerCuatro {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
     .galaxia {
         position: sticky;
         height: 100vh;
@@ -114,37 +112,26 @@ p {
     }
     .galaxia__texto {
         position: absolute;
-        top: 205px;
+        top: 230px;
+        bottom: 1px;
         padding: 50px;
-        height: 444px;
         overflow: scroll;
     }
     .galaxia__texto--header {
         position: sticky;
         top: -45px;
+        height: 58px;
     }
     .galaxia__texto--header.isSticky {
         background-color: red;
     }
-    .galaxia__texto--header>hr {
-        height: 2px;
-        background-color: rgba(255, 255, 255, 0.459);
-    }
     .separador {
-        height: 250px;
-        padding-bottom: 20%;
+        height: 64vh;
     }
     header {
         position: sticky;
         top: -50px;
-        height: 69px;
-        /* not important styles */
+        bottom: -1px;
         padding: 1em;
-        transition: .1s;
-    }
-    header.isSticky {
-        /* styles for when the header is in sticky mode */
-        font-size: .8em;
-        opacity: .5;
     }
 }
