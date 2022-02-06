@@ -1,5 +1,9 @@
 /* INDEX */
 
+body {
+    background-image: url(../imgs/background.jpg);
+}
+
 .noticiario__noticia {
     background-color: rgba(32, 32, 32, 0.486);
 }
@@ -33,6 +37,7 @@ label {
         overflow: hidden;
         border-bottom: 5vw solid rgba(255, 255, 255, 0);
         transition: all 0.5s;
+        text-align: justify;
     }
     .noticiario__noticia:hover {
         background-color: rgba(255, 255, 255, 0.116);
@@ -60,8 +65,7 @@ label {
         text-align: center;
         width: 100%;
         margin-top: 20px;
-        padding-top: 20px;
-        top: 155px;
+        top: 200px;
         height: 100%;
         overflow: auto;
     }
@@ -95,8 +99,10 @@ label {
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
         display: inline-block;
+        text-align: justify;
         margin: 1%;
-        padding: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
         height: 100%;
         position: fixed;
         top: 123px;
@@ -125,7 +131,7 @@ label {
         max-height: none;
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia:hover {
-        padding: 5%;
+        padding: 7%;
     }
     .noticiario__espacioInferior {
         width: 100%;

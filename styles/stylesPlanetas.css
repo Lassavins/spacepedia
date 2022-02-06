@@ -1,0 +1,91 @@
+body {
+    background-image: url(../imgs/backgroundPlanetas.jpg);
+}
+
+.planetas__descripcionA>p,
+.planetas__descripcionB>p {
+    text-align: justify;
+}
+
+
+/* El grande */
+
+@media (min-width: 768px) {
+    .planetas {
+        position: fixed;
+        top: 172px;
+        height: 83%;
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+    .separador {
+        position: fixed;
+        top: 172px;
+        z-index: 1;
+        height: 100px;
+        width: 100%;
+        background: linear-gradient(0, rgba(0, 0, 0, 0) 0, #000000 100%);
+    }
+    #bottom {
+        top: auto;
+        bottom: 0px;
+        background: linear-gradient(0, rgb(0, 0, 0) 0, #00000000 100%);
+    }
+    .planetas__planeta {
+        position: relative;
+        height: 840px;
+        overflow: hidden;
+    }
+    .planetas__planeta--imagenA {
+        width: 900px;
+        position: relative;
+        left: -550px;
+        top: -32px;
+    }
+    .planetas__descripcionA {
+        position: relative;
+        top: -780px;
+        margin-left: 340px;
+        margin-right: 100px;
+    }
+    .planetas__planeta--imagenB {
+        width: 900px;
+        display: block;
+        margin-left: auto;
+        position: relative;
+        right: -550px;
+        top: -32px;
+    }
+    .planetas__descripcionB {
+        position: relative;
+        top: -780px;
+        margin-left: 100px;
+        margin-right: 340px;
+    }
+    #neptuno {
+        position: sticky;
+        top: 0px;
+    }
+}
+
+
+/* El movil */
+
+@media (max-width: 767px) {
+    .separador {
+        height: 100px;
+    }
+    .planetas {
+        display: block;
+        text-align: center;
+    }
+    .planetas__planeta {
+        padding: 5%;
+        font-size: larger;
+        text-align: center;
+    }
+    .planetas__planeta--imagenA,
+    .planetas__planeta--imagenB {
+        width: 300px;
+    }
+}

@@ -11,7 +11,8 @@
 }
 
 body {
-    background-image: url("../imgs/background.jpg");
+    /* background-image: url("../imgs/background.jpg"); */
+    background-color: black;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,4 +41,23 @@ hr {
     font-size: smaller;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.volverArriba {
+    width: 100%;
+    text-align: center;
+}
+
+.volverArriba>a {
+    color: rgba(255, 255, 255, 0.664);
+    background-color: rgba(255, 255, 255, 0.116);
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.volverArriba>a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.185);
+    transition: all 0.5s;
 }

@@ -20,7 +20,7 @@
 @media (max-width: 767px) {
     .cabecera {
         width: 100%;
-        height: 35px;
+        height: 45px;
         top: 0px;
         padding: 10px 0px;
         background-color: black;
@@ -38,12 +38,11 @@
         height: 50px;
         font-size: 40px;
         position: relative;
-        top: -10px;
         left: 10px;
         display: block;
         position: fixed;
         z-index: 2;
-        top: 5px;
+        top: 8px;
         text-align: center;
         transition: all 0.3s;
         -webkit-user-select: none;
@@ -56,9 +55,9 @@
         transition: all 0.3s;
     }
     .cabecera__logo {
-        width: 300px;
+        width: 280px;
         position: relative;
-        top: -14px;
+        top: -7px;
         display: inline;
     }
     .cabecera__opciones {
@@ -92,6 +91,17 @@
     }
     .cabecera__separador {
         display: none;
+    }
+    .cabecera__opciones--sub {
+        font-size: smaller;
+        width: 110px;
+        position: fixed;
+        top: 18px;
+        right: 0px;
+        margin-right: 10px;
+    }
+    .cabecera__opciones--sub>li {
+        color: rgba(255, 255, 255, 0.685);
     }
 }
 
@@ -153,6 +163,7 @@
         top: -41px;
     }
     .cabecera__opciones--sub>li {
+        color: rgba(255, 255, 255, 0.664);
         display: inline;
         width: 20%;
         padding: 2%;
@@ -164,5 +175,19 @@
     .cabecera__opciones--sub>li>a:hover {
         color: white;
         transition: all 0.5s;
+    }
+    .cabecera__opciones--sub>li {
+        animation-duration: 1.5s;
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes blink {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0.5;
+        }
     }
 }
