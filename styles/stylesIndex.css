@@ -100,13 +100,13 @@ label {
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
         display: inline-block;
         text-align: justify;
-        margin: 1%;
-        margin-left: 10%;
-        margin-right: 10%;
         height: 100%;
         position: fixed;
-        top: 123px;
+        top: 170px;
         left: 0%;
+        padding-left: 15%;
+        padding-right: 15%;
+        border-top: 2px solid rgba(255, 255, 255, 0.116);
         background-image: url("../imgs/backgroundNoticia.jpg");
         background-position: center;
         background-size: cover;
@@ -132,6 +132,9 @@ label {
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia:hover {
         padding: 7%;
+        margin: 0px;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     .noticiario__espacioInferior {
         width: 100%;

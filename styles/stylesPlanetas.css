@@ -47,6 +47,16 @@ body {
         top: -780px;
         margin-left: 340px;
         margin-right: 100px;
+        animation-duration: 2.5s;
+        animation-name: aparece;
+    }
+    @keyframes aparece {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
     .planetas__planeta--imagenB {
         width: 900px;
@@ -65,6 +75,11 @@ body {
     #neptuno {
         position: sticky;
         top: 0px;
+    }
+    .volverArriba {
+        position: relative;
+        bottom: 130px;
+        z-index: 1;
     }
 }
 
@@ -87,5 +102,8 @@ body {
     .planetas__planeta--imagenA,
     .planetas__planeta--imagenB {
         width: 300px;
+    }
+    .volverArriba {
+        margin-bottom: 50px;
     }
 }

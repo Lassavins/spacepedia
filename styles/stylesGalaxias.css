@@ -65,6 +65,9 @@
         padding-bottom: 5%;
         padding-top: 5%;
     }
+    .cabecera__opciones--sub {
+        display: none;
+    }
 }
 
 
@@ -134,6 +137,11 @@
         bottom: 1px;
         padding: 50px;
         overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .galaxia__texto::-webkit-scrollbar {
+        display: none;
     }
     .galaxia__texto--header {
         position: sticky;
