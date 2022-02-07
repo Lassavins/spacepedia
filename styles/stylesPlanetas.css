@@ -22,7 +22,7 @@ body {
         position: fixed;
         top: 172px;
         z-index: 1;
-        height: 100px;
+        height: 200px;
         width: 100%;
         background: linear-gradient(0, rgba(0, 0, 0, 0) 0, #000000 100%);
     }
@@ -47,7 +47,7 @@ body {
         top: -780px;
         margin-left: 340px;
         margin-right: 100px;
-        animation-duration: 2.5s;
+        animation-duration: 3s;
         animation-name: aparece;
     }
     @keyframes aparece {
