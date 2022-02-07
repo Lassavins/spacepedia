@@ -24,6 +24,7 @@ body {
         z-index: 1;
         height: 200px;
         width: 100%;
+        pointer-events: none;
         background: linear-gradient(0, rgba(0, 0, 0, 0) 0, #000000 100%);
     }
     #bottom {
@@ -34,19 +35,19 @@ body {
     .planetas__planeta {
         position: relative;
         height: 840px;
-        overflow: hidden;
     }
     .planetas__planeta--imagenA {
+        display: inline-block;
         width: 900px;
         position: relative;
-        left: -550px;
-        top: -32px;
+        left: -81.5%;
+        padding-left: 150vw;
     }
     .planetas__descripcionA {
         position: relative;
-        top: -780px;
-        margin-left: 340px;
-        margin-right: 100px;
+        width: 20%;
+        top: -700px;
+        margin-left: 45vw;
         animation-duration: 3s;
         animation-name: aparece;
     }
@@ -61,16 +62,13 @@ body {
     .planetas__planeta--imagenB {
         width: 900px;
         display: block;
-        margin-left: auto;
-        position: relative;
-        right: -550px;
-        top: -32px;
+        margin-left: 60vw;
     }
     .planetas__descripcionB {
         position: relative;
-        top: -780px;
-        margin-left: 100px;
-        margin-right: 340px;
+        width: 20%;
+        top: -700px;
+        margin-left: 8vw;
     }
     #saturno {
         overflow: visible;
@@ -78,9 +76,8 @@ body {
     #saturno>img {
         width: 1100px;
     }
-    #neptuno {
-        position: sticky;
-        top: 0px;
+    #neptuno>div {
+        top: -530px;
     }
     .volverArriba {
         position: relative;
