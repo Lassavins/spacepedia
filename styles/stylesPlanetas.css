@@ -72,6 +72,12 @@ body {
         margin-left: 100px;
         margin-right: 340px;
     }
+    #saturno {
+        overflow: visible;
+    }
+    #saturno>img {
+        width: 1100px;
+    }
     #neptuno {
         position: sticky;
         top: 0px;
@@ -105,5 +111,10 @@ body {
     }
     .volverArriba {
         margin-bottom: 50px;
+    }
+    #saturno>img {
+        width: 500px;
+        margin-top: -100px;
+        margin-bottom: -100px;
     }
 }
