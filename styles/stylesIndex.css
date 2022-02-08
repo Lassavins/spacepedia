@@ -60,9 +60,7 @@ label {
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
         height: auto;
     }
-    .cabecera__opciones--sub {
-        display: none;
-    }
+    .cabecera__opciones--sub {}
 }
 
 
@@ -153,5 +151,8 @@ label {
     .noticiario__espacioInferior {
         width: 100%;
         height: 260px;
+    }
+    #volverIndex {
+        display: none;
     }
 }

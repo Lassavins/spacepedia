@@ -96,6 +96,7 @@ body {
         padding: 5%;
         font-size: larger;
         text-align: center;
+        padding-top: 120px;
     }
     .planetas__planeta--imagenA,
     .planetas__planeta--imagenB {
@@ -108,8 +109,5 @@ body {
         width: 100%;
         margin-top: -80px;
         margin-bottom: -80px;
-    }
-    #sub__planetas {
-        display: none;
     }
 }
