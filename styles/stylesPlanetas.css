@@ -70,8 +70,8 @@ body {
     }
     #sub__planetas {
         position: relative;
-        top: 163px;
-        z-index: 10;
+        left: -15vw;
+        width: 100vw;
     }
     #sub__planetas>li {
         animation-duration: 0s;

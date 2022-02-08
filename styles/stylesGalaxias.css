@@ -18,16 +18,19 @@
 @media (max-width: 767px) {
     #uno {
         background-image: url(../imgs/galaxias/milkyWay.jpeg);
+        background-attachment: scroll;
     }
     #dos {
         background-image: url(../imgs/galaxias/canisMayorMovil.jpeg);
+        background-attachment: scroll;
     }
     #tres {
         background-image: url(../imgs/galaxias/enanaSagitarioMovil.jpeg);
-        background-size: contain;
+        background-attachment: scroll;
     }
     #cuatro {
         background-image: url(../imgs/galaxias/magallanesMovil.jpeg);
+        background-attachment: scroll;
     }
     p {
         padding: 5%;

@@ -20,26 +20,17 @@ label {
 /* El movil */
 
 @media (max-width: 767px) {
-    .noticiario__noticia>label {
-        padding-right: 100%;
-        padding-bottom: 100%;
-        z-index: 10;
-    }
-    .noticiario__noticia--parrafo {
-        pointer-events: none;
-    }
     hr {
         height: 2px;
         border-radius: 100px;
         background-color: rgba(255, 255, 255, 0.39);
     }
-    /* Noticias */
     .noticiario {
         margin-top: 80px;
     }
     .noticiario__noticia {
         margin: 2%;
-        padding: 5%;
+        padding: 2.5vh;
         border-radius: 15px;
         height: 92.1px;
         overflow: hidden;
@@ -47,13 +38,21 @@ label {
         transition: all 0.5s;
         text-align: justify;
     }
-    #noticiario__noticia--leerMenos {
-        display: none;
-    }
     .noticiario__noticia:hover {
         background-color: rgba(255, 255, 255, 0.116);
         margin: 1%;
         padding: 6%;
+    }
+    .noticiario__noticia>label {
+        padding-right: 100%;
+        padding-bottom: 100%;
+        z-index: 10;
+    }
+    .noticiario__noticia--contenido>h1 {
+        text-align: left;
+    }
+    .noticiario__noticia--parrafo {
+        pointer-events: none;
     }
     .noticiario__cajaFloat {
         border: 1px solid rgba(255, 0, 0, 0);
@@ -84,7 +83,7 @@ label {
     }
     .noticiario__noticia {
         height: 77%;
-        padding: 7%;
+        padding: 7.3%;
         text-align: left;
         display: inline-block;
         border-radius: 15px;
@@ -97,12 +96,9 @@ label {
         position: relative;
         top: -204.5px;
     }
-    #noticiario__noticia--leerMenos {
-        top: -65px;
-    }
     .noticiario__noticia:hover {
         background-color: rgba(26, 26, 26, 0.767);
-        padding: 9%;
+        padding: 9.3%;
         margin: -2%;
     }
     .noticiario__cajaFloat {
