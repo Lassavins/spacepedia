@@ -144,9 +144,9 @@ label {
             opacity: 1;
         }
     }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia>label {}
+    /* .noticia__leerMas--checkBox:checked~.noticiario__noticia>label {} */
     .noticia__leerMas--checkBox:checked~.noticiario__noticia>div {
-        top: -775px;
+        top: -75vh;
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia:hover {
         padding: 7%;
