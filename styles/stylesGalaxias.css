@@ -1,15 +1,15 @@
-/* INDEX */
+/* General */
 
 .galaxia>.galaxia__texto>hr {
     width: 100%;
     border: none;
     border-radius: 15px;
     height: 2px;
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.397);
 }
 
-.cabecera {
-    z-index: 1;
+#subGalaxias>li {
+    animation-duration: 0s;
 }
 
 
@@ -17,17 +17,17 @@
 
 @media (max-width: 767px) {
     #uno {
-        background-image: url(../imgs/milkyWay.jpeg);
+        background-image: url(../imgs/galaxias/milkyWay.jpeg);
     }
     #dos {
-        background-image: url(../imgs/canisMayorMovil.jpeg);
+        background-image: url(../imgs/galaxias/canisMayorMovil.jpeg);
     }
     #tres {
-        background-image: url(../imgs/enanaSagitarioMovil.jpeg);
+        background-image: url(../imgs/galaxias/enanaSagitarioMovil.jpeg);
         background-size: contain;
     }
     #cuatro {
-        background-image: url(../imgs/magallanesMovil.jpeg);
+        background-image: url(../imgs/galaxias/magallanesMovil.jpeg);
     }
     p {
         padding: 5%;
@@ -89,19 +89,19 @@
     }
     #uno,
     #headerUno {
-        background-image: url(../imgs/milkyWay.jpeg);
+        background-image: url(../imgs/galaxias/milkyWay.jpeg);
     }
     #dos,
     #headerDos {
-        background-image: url(../imgs/canisMayor.jpeg);
+        background-image: url(../imgs/galaxias/canisMayor.jpeg);
     }
     #tres,
     #headerTres {
-        background-image: url(../imgs/enanaSagitario.jpeg);
+        background-image: url(../imgs/galaxias/enanaSagitario.jpeg);
     }
     #cuatro,
     #headerCuatro {
-        background-image: url(../imgs/magallanes.jpeg);
+        background-image: url(../imgs/galaxias/magallanes.jpeg);
     }
     p {
         padding: 5%;
@@ -110,12 +110,9 @@
         text-align: justify;
     }
     .galaxia {
-        position: sticky;
-        height: 100vh;
         top: 0px;
         width: 100%;
         font-size: larger;
-        overflow: scroll;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -132,27 +129,16 @@
         padding-right: 2.5%;
     }
     .galaxia__texto {
-        position: absolute;
         top: 170px;
         bottom: 1px;
         padding: 50px;
-        overflow: scroll;
+        overflow: hidden;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
-    .galaxia__texto::-webkit-scrollbar {
-        display: none;
-    }
     .galaxia__texto--header {
-        position: sticky;
-        top: -45px;
-        height: 58px;
-    }
-    header {
-        position: sticky;
-        top: -50px;
-        bottom: -1px;
         padding: 1em;
+        margin-bottom: 3.7vh;
     }
     .separador {
         height: 80vh;

@@ -18,24 +18,29 @@
         <label for="activar" class="checkbox__boton">=</label>
         <div class="cabecera">
 
-            <a href="index.html"><img src="imgs/logo.png" alt="" class="cabecera__logo"></a>
+            <a href="index.html"><img src="imgs/logos/logo.png" alt="" class="cabecera__logo"></a>
             <ul class="cabecera__opciones">
                 <li><a href="index.html">Noticias</a></li>
                 <li><a href="galaxias.html" style="color:white">Galaxias</a></li>
                 <li><a href="planetas.html">Planetas</a></li>
                 <li><a href="ciencia.html">Ciencia</a></li>
                 <li><a href="participa.html">Participa</a></li>
-                <hr class="cabecera__separador">
+
 
             </ul>
+            <hr class="cabecera__separador">
 
-
-            <ul class="cabecera__opciones--sub">
-                <li>Scroll dentro para ver mas</li>
+            <ul class="cabecera__opciones--sub" id="subGalaxias">
+                <li><a href="#uno">Via Láctea</a></li>
+                <li><a href="#dos">Canis Mayor</a></li>
+                <li><a href="#tres">Enana Sagitario</a></li>
+                <li><a href="#cuatro">Nube Magallanes</a></li>
             </ul>
         </div>
+        <div class="oscurecedor"></div>
     </div>
     <!-- fin header -->
+
     <div class="galaxia" id="uno">
         <div class="galaxia__texto">
             <div class="separador"></div>
@@ -173,58 +178,8 @@
                 aliqua proident dolore aliquip. Et non ullamco est officia quis duis. Dolore minim ullamco veniam consequat consequat. Consequat ullamco consectetur dolor incididunt aute, est ea deserunt aliqua sit ad veniam. Ea mollit ex veniam est fugiat
                 qui. Labore tempor proident nulla excepteur, magna sint cupidatat duis qui, in esse sit ex eu occaecat non. Consequat dolore laborum labore. Culpa nisi elit lorem.
             </p>
-            <div class="volverArriba">
-                <a href="galaxias.html">Volver arriba</a>
-            </div>
         </div>
     </div>
-
-
-
-    <script>
-        // Estas variables corresponden a cada elemento del Html con los id que atrapa el "query selector"//
-        let dos = document.querySelector('#dos');
-        let tres = document.querySelector('#tres');
-        let cuatro = document.querySelector('#cuatro');
-
-        let myChecker; // El checker es el boolean para que se active el efecto.
-
-        let anteriorScroll = window.scrollY; // calculamos la posicion por pantalla, el scroll //
-
-        // Ponemos la ventana a "escuchar" o estar atento a cualquier evento de scroll //
-        window.addEventListener('scroll', () => {
-            if (window.scrollY >= anteriorScroll) {
-                console.log('scrolling DOWN ' + myChecker); // Mostramos el mensaje "scrolling DOWN por pantalla y el valor de Mychecker"
-                myChecker = true;
-            } else {
-                console.log('scrolling UP ' + myChecker); // Mostramos el mensaje "scrolling DOWN por pantalla y el valor de Mychecker"
-                myChecker = false;
-            }
-
-            anteriorScroll = window.scrollY; // le asignamos a la variable posición, la posición actual para su posterior comparación //
-        });
-        // esto es una funcion que ejecuta el desplazamiento //
-        let scrollToElement = (elemento) => {
-                if (myChecker) {
-                    let Intervalo = setInterval(() => {
-                        offsetValue = elemento.offsetTop; // Variable posicion del elemento X => (tres, dos, o cuatro)
-                        document.documentElement.scrollTop += 10; // Scroll de  en  hasta el elemento X
-
-                        // cuando el scrool llegue al documento se parará
-                        if (document.documentElement.scrollTop >= offsetValue) {
-                            clearInterval(Intervalo);
-                        }
-                    }, 10);
-                } else {
-                    console.log('Subiendo... efecto deshabilitado');
-                }
-            }
-            // aquí pillamos los eventos de hover para cada elemento x (dos, tres y cuatro)
-        dos.addEventListener('mouseover', () => scrollToElement(dos));
-        tres.addEventListener('mouseover', () => scrollToElement(tres));
-        cuatro.addEventListener('mouseover', () => scrollToElement(cuatro));
-        // seguimos trabajando en esto
-    </script>
 </body>
 
 </html>

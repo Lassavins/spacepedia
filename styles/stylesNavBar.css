@@ -20,17 +20,22 @@
 @media (max-width: 767px) {
     .cabecera {
         width: 100%;
-        height: 45px;
+        height: 45.5px;
         top: 0px;
         padding: 10px 0px;
         background-color: black;
         overflow: hidden;
         text-align: center;
         transition: height 0.5s;
+        z-index: 1;
     }
     #activar:checked~.cabecera {
         height: 100%;
-        background-color: rgb(19, 10, 27);
+        background-color: rgb(11, 10, 27);
+    }
+    #activar:checked~.volverArriba {
+        display: none;
+        transition: all 0.5s;
     }
     .checkbox__boton {
         float: left;
@@ -93,8 +98,8 @@
         display: none;
     }
     .cabecera__opciones--sub {
-        font-size: smaller;
-        width: 110px;
+        font-size: 2vw;
+        width: 18vw;
         position: fixed;
         top: 18px;
         right: 0px;
@@ -112,8 +117,11 @@
     .cabecera {
         width: 70%;
         height: 200px;
-        margin: auto 15% auto 15%;
         overflow: hidden;
+        padding-left: 15%;
+        padding-right: 15%;
+        z-index: 10;
+        backdrop-filter: blur(5px);
     }
     .cabecera__logo {
         width: 500px;
@@ -142,7 +150,7 @@
         border-radius: 50px;
         transition: all 0.5s ease-out;
     }
-    .cabecera>ul:hover .cabecera__separador {
+    .cabecera>ul:hover~.cabecera__separador {
         background-color: rgba(255, 255, 255, 0.116);
         border-radius: 50px;
         border-bottom: 2px solid rgba(255, 255, 255, 0);
@@ -160,7 +168,7 @@
     .cabecera__opciones--sub {
         text-align: center;
         position: relative;
-        top: -41px;
+        top: -46px;
     }
     .cabecera__opciones--sub>li {
         color: rgba(255, 255, 255, 0.664);
@@ -189,5 +197,13 @@
         to {
             opacity: 0.5;
         }
+    }
+    .oscurecedor {
+        position: fixed;
+        z-index: 1;
+        height: 400px;
+        width: 100%;
+        pointer-events: none;
+        background: linear-gradient(0, rgba(0, 0, 0, 0) 0, #000000 100%);
     }
 }

@@ -18,27 +18,34 @@
         <label for="activar" class="checkbox__boton">=</label>
         <div class="cabecera">
 
-            <a href="index.html"><img src="imgs/logo.png" alt="" class="cabecera__logo"></a>
+            <a href="index.html"><img src="imgs/logos/logo.png" alt="" class="cabecera__logo"></a>
             <ul class="cabecera__opciones">
                 <li><a href="index.html">Noticias</a></li>
                 <li><a href="galaxias.html">Galaxias</a></li>
                 <li><a href="planetas.html" style="color:white">Planetas</a></li>
                 <li><a href="ciencia.html">Ciencia</a></li>
                 <li><a href="participa.html">Participa</a></li>
-                <hr class="cabecera__separador">
-
             </ul>
-            <ul class="cabecera__opciones--sub">
-                <li></li>
-            </ul>
+            <hr class="cabecera__separador">
         </div>
+        <div class="volverArriba"><a href="#mercurio">Volver arriba</a></div>
     </div>
-    <!-- fin header -->
 
+    <!-- fin header -->
+    <ul class="cabecera__opciones--sub" id="sub__planetas">
+        <li><a href="#mercurio">Mercurio</a></li>
+        <li><a href="#venus">Venus</a></li>
+        <li><a href="#tierra">Tierra</a></li>
+        <li><a href="#marte">Marte</a></li>
+        <li><a href="#jupiter">Júpiter</a></li>
+        <li><a href="#saturno">Saturno</a></li>
+        <li><a href="#urano">Urano</a></li>
+        <li><a href="#neptuno">Neptuno</a></li>
+    </ul>
     <div class="planetas">
-        <div class="separador"></div>
+        <div class="oscurecedor" id="oscurecedorPlanetas"></div>
         <div class="planetas__planeta" id="mercurio">
-            <img src="./imgs/mercurio.png" alt="" class="planetas__planeta--imagenA">
+            <img src="./imgs/planetas/mercurio.png" alt="" class="planetas__planeta--imagenA">
             <div class="planetas__descripcionA">
                 <h1>Mercurio</h1>
                 <h3>El planeta metálico</h3>
@@ -54,7 +61,7 @@
         </div>
 
         <div class="planetas__planeta" id="venus">
-            <img src="./imgs/venus.png" alt="" class="planetas__planeta--imagenB">
+            <img src="./imgs/planetas/venus.png" alt="" class="planetas__planeta--imagenB">
             <div class="planetas__descripcionB">
                 <h1>Venus</h1>
                 <h3>El planeta reflectante</h3>
@@ -69,7 +76,7 @@
             </div>
         </div>
         <div class="planetas__planeta" id="tierra">
-            <img src="./imgs/earth.png" alt="" class="planetas__planeta--imagenA">
+            <img src="./imgs/planetas/earth.png" alt="" class="planetas__planeta--imagenA">
             <div class="planetas__descripcionA">
                 <h1>Tierra</h1>
                 <h3>Nuestro hogar</h3>
@@ -85,7 +92,7 @@
         </div>
 
         <div class="planetas__planeta" id="marte">
-            <img src="./imgs/mars.png" alt="" class="planetas__planeta--imagenB">
+            <img src="./imgs/planetas/mars.png" alt="" class="planetas__planeta--imagenB">
             <div class="planetas__descripcionB">
                 <h1>Marte</h1>
                 <h3>El planeta rojo</h3>
@@ -100,7 +107,7 @@
             </div>
         </div>
         <div class="planetas__planeta" id="jupiter">
-            <img src="./imgs/jupiter.png" alt="" class="planetas__planeta--imagenA">
+            <img src="./imgs/planetas/jupiter.png" alt="" class="planetas__planeta--imagenA">
             <div class="planetas__descripcionA">
                 <h1>Júpiter</h1>
                 <h3>El gigante gaseoso</h3>
@@ -116,22 +123,26 @@
         </div>
 
         <div class="planetas__planeta" id="saturno">
-            <img src="./imgs/saturn.png" alt="" class="planetas__planeta--imagenB">
+            <img src="./imgs/planetas/saturn.png" alt="" class="planetas__planeta--imagenB">
             <div class="planetas__descripcionB">
+
                 <h1>Saturno</h1>
                 <h3>El Júpiter casado</h3>
                 <hr>
+
                 <p>
+
                     Id aute excepteur mollit mollit. Lorem culpa commodo sunt. Est nostrud laboris sint. Non duis velit qui duis eu. Proident voluptate ut culpa dolore id consequat. Irure elit cillum ullamco ipsum. Quis esse aliquip mollit amet, quis ullamco mollit enim
                     reprehenderit. Consequat est sed reprehenderit, sunt cillum elit cillum sit cillum aliquip adipiscing. Laboris proident et adipiscing deserunt, eu labore cupidatat ad amet nisi ut. Occaecat occaecat nisi elit quis fugiat duis laborum.
                     Nulla in do nulla amet reprehenderit deserunt enim. Cillum dolor aliqua anim dolor. Culpa tempor ut ullamco amet qui sunt eu. Aliquip lorem proident sunt reprehenderit minim qui, occaecat proident culpa duis pariatur proident labore
                     amet. Lorem esse sint labore et anim cillum. Cillum sint nisi occaecat duis fugiat ad sed. Incididunt qui aliqua dolor. Exercitation ullamco excepteur consectetur ad exercitation mollit ut, anim deserunt pariatur lorem. Anim ullamco
                     ea nulla magna commodo. Consequat aute id nulla sunt ullamco consequat exercitation. Aliqua incididunt laboris pariatur reprehenderit. Ipsum tempor occaecat exercitation.
                 </p>
+
             </div>
         </div>
         <div class="planetas__planeta" id="urano">
-            <img src="./imgs/uranus.png" alt="" class="planetas__planeta--imagenA">
+            <img src="./imgs/planetas/uranus.png" alt="" class="planetas__planeta--imagenA">
             <div class="planetas__descripcionA">
                 <h1>Urano</h1>
                 <h3>Agua y metano</h3>
@@ -147,7 +158,7 @@
         </div>
 
         <div class="planetas__planeta" id="neptuno">
-            <img src="./imgs/neptune.png" alt="" class="planetas__planeta--imagenB">
+            <img src="./imgs/planetas/neptune.png" alt="" class="planetas__planeta--imagenB">
             <div class="planetas__descripcionB">
                 <h1>Neptuno</h1>
                 <h3>Frío y viento</h3>
@@ -162,9 +173,11 @@
             </div>
         </div>
 
-        <div class="separador" id="bottom"></div>
-        <div class="volverArriba"><a href="#mercurio">Volver arriba</a></div>
+
+
+        <div class="oscurecedor" id="oscurecedor__abajo"></div>
     </div>
+
 
 </body>
 
