@@ -60,7 +60,9 @@ label {
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
         height: auto;
     }
-    .cabecera__opciones--sub {}
+    .cabecera__opciones--sub {
+        padding-left: 24%;
+    }
 }
 
 
