@@ -75,32 +75,24 @@
 
 @media (min-width: 768px) {
     #uno,
-    #headerUno,
     #dos,
-    #headerDos,
     #tres,
-    #headerTres,
-    #cuatro,
-    #headerCuatro {
+    #cuatro {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-    #uno,
-    #headerUno {
+    #uno {
         background-image: url(../imgs/galaxias/milkyWay.jpeg);
     }
-    #dos,
-    #headerDos {
+    #dos {
         background-image: url(../imgs/galaxias/canisMayor.jpeg);
     }
-    #tres,
-    #headerTres {
+    #tres {
         background-image: url(../imgs/galaxias/enanaSagitario.jpeg);
     }
-    #cuatro,
-    #headerCuatro {
+    #cuatro {
         background-image: url(../imgs/galaxias/magallanes.jpeg);
     }
     p {
