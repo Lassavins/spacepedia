@@ -194,7 +194,7 @@
         color: rgba(255, 255, 255, 0.664);
         display: inline;
         padding: 0% 2%;
-        animation-duration: 1.5s;
+        animation-duration: 0s;
         animation-name: blink;
         animation-iteration-count: infinite;
         animation-direction: alternate;
