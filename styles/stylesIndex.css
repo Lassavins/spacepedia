@@ -51,7 +51,7 @@ label {
     .noticiario__noticia--contenido>h1 {
         text-align: left;
     }
-    .noticiario__noticia--parrafo {
+    .noticiario__noticia--contenido {
         pointer-events: none;
     }
     .noticiario__cajaFloat {
