@@ -16,7 +16,6 @@
 /* El movil */
 
 @media (max-width: 767px) {
-    body {}
     p {
         padding: 5%;
         background-color: rgba(27, 27, 27, 0.479);
