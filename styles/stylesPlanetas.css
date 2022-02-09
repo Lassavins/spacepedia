@@ -13,9 +13,10 @@ body {
 @media (min-width: 768px) {
     .planetas {
         position: fixed;
-        top: 172px;
+        top: 0px;
         height: 100vh;
         overflow: scroll;
+        border: 1px solid green;
     }
     .planetas__planeta {
         position: relative;
@@ -75,9 +76,6 @@ body {
     }
     #sub__planetas>li {
         animation-duration: 0s;
-    }
-    #oscurecedorPlanetas {
-        height: 250px;
     }
 }
 

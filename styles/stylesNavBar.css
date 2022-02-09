@@ -129,27 +129,24 @@
 
 @media (min-width: 768px) {
     .cabecera {
-        width: 70%;
-        height: 200px;
+        width: 100%;
+        height: 85px;
         overflow: hidden;
-        padding-left: 15%;
-        padding-right: 15%;
         z-index: 10;
-        backdrop-filter: blur(5px);
     }
     .cabecera__logo {
-        width: 500px;
-        display: block;
-        margin: auto;
-        padding-top: 25px;
+        width: 300px;
     }
     .cabecera__opciones {
+        float: right;
+        margin-top: 13px;
+        margin-right: 3%;
+        width: 58%;
         border-radius: 50px;
         white-space: nowrap;
-        transition: all 0.5s ease-out;
     }
     .cabecera__opciones:hover {
-        background-color: rgba(255, 255, 255, 0.082);
+        background-color: rgba(255, 255, 255, 0.192);
         transition: all 0.5s ease-out;
     }
     .cabecera__opciones>li {
@@ -178,6 +175,8 @@
         width: 96%;
     }
     .cabecera__separador {
+        display: none;
+        /* ESTO ES PROVISIONAL, SI LA QUITO LO BORRO TODO */
         margin: 0px;
         transition: all 0.5s ease-out;
         background-color: rgba(88, 88, 88, 0.479);
@@ -189,12 +188,11 @@
     }
     .cabecera__opciones--sub {
         text-align: center;
-        padding-top: 5px;
+        margin-top: -4px;
     }
     .cabecera__opciones--sub>li {
         color: rgba(255, 255, 255, 0.664);
         display: inline;
-        width: 20%;
         padding: 0% 2%;
         animation-duration: 1.5s;
         animation-name: blink;
@@ -212,7 +210,7 @@
     .oscurecedor {
         position: fixed;
         z-index: 1;
-        height: 400px;
+        height: 150px;
         width: 100%;
         pointer-events: none;
         background: linear-gradient(0, rgba(0, 0, 0, 0) 0, #000000 100%);
