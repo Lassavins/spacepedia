@@ -23,6 +23,15 @@
     transition: all 0.5s;
 }
 
+.oscurecedor {
+    position: fixed;
+    z-index: 1;
+    height: 150px;
+    width: 100%;
+    pointer-events: none;
+    background: linear-gradient(0, rgba(0, 0, 0, 0) 0, #000000 100%);
+}
+
 
 /* El movil */
 
@@ -32,15 +41,17 @@
         height: 45.5px;
         top: 0px;
         padding: 10px 0px;
-        background-color: black;
         overflow: hidden;
         text-align: center;
-        transition: height 0.5s;
-        z-index: 1;
+        transition: all 0.5s;
+        z-index: 10;
     }
     #activar:checked~.cabecera {
         height: 100%;
-        background-color: rgb(11, 10, 27);
+        background-color: #00000060;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        -moz-backdrop-filter: blur(20px);
     }
     #activar:checked~.volverArriba {
         display: none;
@@ -55,7 +66,7 @@
         left: 10px;
         display: block;
         position: fixed;
-        z-index: 2;
+        z-index: 20;
         top: 8px;
         text-align: center;
         transition: all 0.3s;
@@ -115,7 +126,6 @@
         position: fixed;
         top: 65px;
         margin-right: 10px;
-        background-color: black;
     }
     .cabecera__opciones--sub>li {
         color: rgba(255, 255, 255, 0.685);
@@ -124,14 +134,17 @@
     }
 }
 
+.cabecera {
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+}
+
 
 /* El grande */
 
 @media (min-width: 768px) {
     .cabecera {
-        width: 100%;
-        height: 85px;
-        overflow: hidden;
         z-index: 10;
     }
     .cabecera__logo {
@@ -144,6 +157,7 @@
         width: 58%;
         border-radius: 50px;
         white-space: nowrap;
+        transition: all 0.5s ease-out;
     }
     .cabecera__opciones:hover {
         background-color: rgba(255, 255, 255, 0.192);
@@ -206,13 +220,5 @@
         to {
             opacity: 0.5;
         }
-    }
-    .oscurecedor {
-        position: fixed;
-        z-index: 1;
-        height: 150px;
-        width: 100%;
-        pointer-events: none;
-        background: linear-gradient(0, rgba(0, 0, 0, 0) 0, #000000 100%);
     }
 }

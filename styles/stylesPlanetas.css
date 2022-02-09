@@ -1,96 +1,96 @@
-            body {
-            background-image: url(../imgs/fondos/backgroundPlanetas.jpg);
-        }
-        
-        .planetas__descripcionA>p,
-        .planetas__descripcionB>p {
-            text-align: justify;
-        }
-        /* El grande */
-        
-        @media (min-width: 768px) {
-            .planetas {
-                position: fixed;
-                top: 0px;
-                height: 100vh;
-                overflow: scroll;
+                body {
+                background-image: url(../imgs/fondos/backgroundPlanetas.jpg);
             }
-            .planetas__planeta {
-                position: relative;
-                height: 900px;
+            
+            .planetas__descripcionA>p,
+            .planetas__descripcionB>p {
+                text-align: justify;
             }
-            .planetas__planeta--imagenA {
-                display: inline-block;
-                width: 900px;
-                position: relative;
-                left: -81.5%;
-                padding-left: 150vw;
-            }
-            .planetas__descripcionA {
-                position: relative;
-                width: 20%;
-                top: -700px;
-                margin-left: 45vw;
-                animation-duration: 3s;
-                animation-name: aparece;
-            }
-            @keyframes aparece {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-            .planetas__planeta--imagenB {
-                width: 900px;
-                display: block;
-                margin-left: 60vw;
-            }
-            .planetas__descripcionB {
-                position: relative;
-                width: 20%;
-                top: -700px;
-                margin-left: 8vw;
-            }
-            #mercurio {
-                padding-top: 10vh;
-            }
-            #saturno {
-                overflow: visible;
-            }
-            #saturno>img {
-                width: 1000px;
-                margin-left: 40vw;
-            }
-            #neptuno>div {
-                top: -710px;
-            }
-            /* El movil */
-            @media (max-width: 767px) {
-                .separador {
-                    height: 100px;
-                }
+            /* El grande */
+            
+            @media (min-width: 768px) {
                 .planetas {
-                    display: block;
-                    text-align: center;
+                    position: fixed;
+                    top: 0px;
+                    height: 100vh;
+                    overflow: scroll;
                 }
                 .planetas__planeta {
-                    padding: 5%;
-                    font-size: larger;
-                    text-align: center;
-                    padding-top: 120px;
+                    position: relative;
+                    height: 900px;
                 }
-                .planetas__planeta--imagenA,
+                .planetas__planeta--imagenA {
+                    display: inline-block;
+                    width: 900px;
+                    position: relative;
+                    left: -81.5%;
+                    padding-left: 150vw;
+                }
+                .planetas__descripcionA {
+                    position: relative;
+                    width: 20%;
+                    top: -700px;
+                    margin-left: 45vw;
+                    animation-duration: 3s;
+                    animation-name: aparece;
+                }
+                @keyframes aparece {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
                 .planetas__planeta--imagenB {
-                    width: 300px;
+                    width: 900px;
+                    display: block;
+                    margin-left: 60vw;
+                }
+                .planetas__descripcionB {
+                    position: relative;
+                    width: 20%;
+                    top: -700px;
+                    margin-left: 8vw;
                 }
                 #mercurio {
-                    padding-top: 140px;
+                    padding-top: 10vh;
+                }
+                #saturno {
+                    overflow: visible;
                 }
                 #saturno>img {
-                    width: 100%;
-                    margin-top: -80px;
-                    margin-bottom: -80px;
+                    width: 1000px;
+                    margin-left: 40vw;
                 }
-            }
+                #neptuno>div {
+                    top: -710px;
+                }
+                /* El movil */
+                @media (max-width: 767px) {
+                    .separador {
+                        height: 100px;
+                    }
+                    .planetas {
+                        display: block;
+                        text-align: center;
+                    }
+                    .planetas__planeta {
+                        padding: 5%;
+                        font-size: larger;
+                        text-align: center;
+                        padding-top: 120px;
+                    }
+                    .planetas__planeta--imagenA,
+                    .planetas__planeta--imagenB {
+                        width: 300px;
+                    }
+                    #mercurio {
+                        padding-top: 140px;
+                    }
+                    #saturno>img {
+                        width: 100%;
+                        margin-top: -80px;
+                        margin-bottom: -80px;
+                    }
+                }
