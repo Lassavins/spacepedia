@@ -64,6 +64,12 @@ hr {
     transition: all 0.5s;
 }
 
+#oscurecedor__abajo {
+    top: auto;
+    bottom: 0px;
+    background: linear-gradient(0, rgb(0, 0, 0) 0, #00000000 100%);
+}
+
 
 /* movil */
 
@@ -104,11 +110,6 @@ hr {
         position: relative;
         z-index: 10;
         top: 93vh;
-    }
-    #oscurecedor__abajo {
-        top: auto;
-        bottom: 0px;
-        background: linear-gradient(0, rgb(0, 0, 0) 0, #00000000 100%);
     }
 }
 

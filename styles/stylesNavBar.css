@@ -51,7 +51,11 @@
         background-color: #00000060;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        -moz-backdrop-filter: blur(20px);
+    }
+    @-moz-document url-prefix() {
+        #activar:checked~.cabecera {
+            background-color: black;
+        }
     }
     #activar:checked~.volverArriba {
         display: none;
