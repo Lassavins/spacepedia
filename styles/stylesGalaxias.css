@@ -24,6 +24,7 @@
     .galaxia {
         width: auto;
         margin-bottom: -55px;
+        padding-top: 80px;
     }
     .galaxia__texto {
         top: 100px;
@@ -39,9 +40,7 @@
         padding-top: 50px;
         text-align: left;
     }
-    #uno {
-        margin-top: 100px;
-    }
+    #uno {}
     .volverArriba {
         padding-bottom: 5%;
         padding-top: 5%;

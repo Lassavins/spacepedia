@@ -25,6 +25,9 @@ label {
         border-radius: 100px;
         background-color: rgba(255, 255, 255, 0.39);
     }
+    p {
+        font-size: larger;
+    }
     .noticiario {
         margin-top: 100px;
     }
@@ -40,8 +43,6 @@ label {
     }
     .noticiario__noticia:hover {
         background-color: rgba(255, 255, 255, 0.116);
-        margin: 1%;
-        padding: 4.5%;
     }
     .noticiario__noticia>label {
         padding-right: 100%;
