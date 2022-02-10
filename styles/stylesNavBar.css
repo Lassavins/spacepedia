@@ -25,6 +25,7 @@
 
 .oscurecedor {
     position: fixed;
+    top: 0px;
     z-index: 1;
     height: 150px;
     width: 100%;
