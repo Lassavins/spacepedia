@@ -114,7 +114,7 @@ label {
         height: 100%;
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia {
-        background-color: rgba(0, 0, 0, 0.637);
+        background-color: rgba(0, 0, 0, 0.404);
         display: inline-block;
         text-align: justify;
         position: fixed;
@@ -124,13 +124,15 @@ label {
         right: 1vw;
         width: 55.5%;
         padding: 0px;
-        border-top: 2px solid rgba(255, 255, 255, 0.116);
         opacity: 1;
         animation-name: fadeInOpacity;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
         animation-duration: 1s;
         z-index: 10;
+        box-shadow: 0 0 1.5em #000000a1;
+        -webkit-box-shadow: 0 0 1.5em #000000a1;
+        -moz-box-shadow: 0 0 1.5em #000000a1;
     }
     @keyframes fadeInOpacity {
         0% {
