@@ -42,13 +42,21 @@ hr {
     margin-bottom: 10px;
 }
 
-.pie>p {
-    color: rgba(255, 255, 255, 0.116);
+.pie {
+    z-index: 10;
+    background: none;
+    background-color: none;
+    backdrop-filter: blur(0px);
+    text-align: right;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.568);
     font-style: italic;
     font-size: smaller;
     margin-bottom: 15px;
     text-align: center;
 }
+
+.pie>p {}
 
 .volverArriba {
     width: 100%;
@@ -99,6 +107,9 @@ hr {
         background-color: white;
         color: black;
     }
+    #oscurecedor__abajo {
+        z-index: 0;
+    }
 }
 
 
@@ -115,6 +126,11 @@ hr {
         position: relative;
         z-index: 10;
         top: 93vh;
+    }
+    .pie {
+        position: fixed;
+        bottom: -5px;
+        right: 10px;
     }
 }
 

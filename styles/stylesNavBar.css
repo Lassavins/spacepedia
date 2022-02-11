@@ -137,6 +137,9 @@
         float: left;
         padding: 2%;
     }
+    .oscurecedor {
+        z-index: 1;
+    }
 }
 
 .cabecera {

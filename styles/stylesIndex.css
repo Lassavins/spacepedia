@@ -16,6 +16,10 @@ label {
     cursor: pointer;
 }
 
+p {
+    padding-top: 10px;
+}
+
 
 /* El movil */
 
@@ -28,6 +32,13 @@ label {
     p {
         font-size: larger;
     }
+    h1 {
+        padding-top: 50px;
+        font-size: 7vw;
+    }
+    h3 {
+        font-size: 4vw;
+    }
     .noticiario {
         margin-top: 100px;
     }
@@ -35,8 +46,6 @@ label {
         margin: 2%;
         padding: 2.5vh;
         border-radius: 15px;
-        height: 60px;
-        overflow: hidden;
         border-bottom: 5vw solid rgba(255, 255, 255, 0);
         transition: all 0.5s;
         text-align: justify;
@@ -55,11 +64,26 @@ label {
     .noticiario__noticia--contenido {
         pointer-events: none;
     }
-    .noticiario__cajaFloat {
-        border: 1px solid rgba(255, 0, 0, 0);
+    p {
+        display: none;
     }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia {
-        height: auto;
+    input[value="noticia1"]:checked~#noticia1>p,
+    input[value="noticia2"]:checked~#noticia2>p,
+    input[value="noticia3"]:checked~#noticia3>p,
+    input[value="noticia4"]:checked~#noticia4>p,
+    input[value="noticia5"]:checked~#noticia5>p,
+    input[value="noticia6"]:checked~#noticia6>p,
+    input[value="noticia7"]:checked~#noticia7>p,
+    input[value="noticia8"]:checked~#noticia8>p,
+    input[value="noticia9"]:checked~#noticia9>p,
+    input[value="noticia10"]:checked~#noticia10>p,
+    input[value="noticia11"]:checked~#noticia11>p,
+    input[value="noticia12"]:checked~#noticia12>p,
+    input[value="noticia13"]:checked~#noticia13>p,
+    input[value="noticia14"]:checked~#noticia14>p,
+    input[value="noticia15"]:checked~#noticia15>p,
+    input[value="noticia16"]:checked~#noticia16>p {
+        display: inline;
     }
     .cabecera__opciones--sub {
         padding-left: 24%;
@@ -70,10 +94,6 @@ label {
 /* El grande */
 
 @media (min-width: 768px) {
-    label {
-        position: relative;
-        z-index: 2;
-    }
     .noticiario {
         text-align: center;
         height: 100%;
@@ -97,11 +117,6 @@ label {
         background: none;
         border-bottom: 15px solid rgba(0, 0, 0, 0);
     }
-    .noticiario__noticia--contenido {
-        height: 100%;
-        position: relative;
-        top: -60px;
-    }
     .noticiario__noticia:hover {
         background-color: rgba(26, 26, 26, 0.767);
     }
@@ -114,7 +129,22 @@ label {
         width: 100%;
         height: 100%;
     }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia {
+    input[value="noticia1"]:checked~#noticia1,
+    input[value="noticia2"]:checked~#noticia2,
+    input[value="noticia3"]:checked~#noticia3,
+    input[value="noticia4"]:checked~#noticia4,
+    input[value="noticia5"]:checked~#noticia5,
+    input[value="noticia6"]:checked~#noticia6,
+    input[value="noticia7"]:checked~#noticia7,
+    input[value="noticia8"]:checked~#noticia8,
+    input[value="noticia9"]:checked~#noticia9,
+    input[value="noticia10"]:checked~#noticia10,
+    input[value="noticia11"]:checked~#noticia11,
+    input[value="noticia12"]:checked~#noticia12,
+    input[value="noticia13"]:checked~#noticia13,
+    input[value="noticia14"]:checked~#noticia14,
+    input[value="noticia15"]:checked~#noticia15,
+    input[value="noticia16"]:checked~#noticia16 {
         background-color: rgba(0, 0, 0, 0.404);
         display: inline-block;
         text-align: justify;
@@ -129,7 +159,7 @@ label {
         animation-name: fadeInOpacity;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         z-index: 10;
         box-shadow: 0 0 1.5em #000000a1;
         -webkit-box-shadow: 0 0 1.5em #000000a1;
