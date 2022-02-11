@@ -28,8 +28,7 @@
         font-size: 20vw;
     }
     h3 {
-        position: relative;
-        top: -50vw;
+        margin-left: 1.5%;
     }
     .galaxia__texto--header {
         padding: 300px 5% 0px 5%;

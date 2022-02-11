@@ -85,8 +85,9 @@ p {
     input[value="noticia16"]:checked~#noticia16>p {
         display: inline;
     }
-    .cabecera__opciones--sub {
-        padding-left: 24%;
+    .cabecera__opciones--sub>li {
+        width: 97%;
+        text-align: center;
     }
 }
 
