@@ -17,7 +17,7 @@
 
 @media (max-width: 767px) {
     p {
-        padding: 5% 8% 5% 8%;
+        padding: 5%;
         background-color: rgba(27, 27, 27, 0.479);
         text-align: justify;
     }
