@@ -20,6 +20,25 @@ p {
     padding-top: 10px;
 }
 
+input[value="noticia1"]:checked~#noticia1>p,
+input[value="noticia2"]:checked~#noticia2>p,
+input[value="noticia3"]:checked~#noticia3>p,
+input[value="noticia4"]:checked~#noticia4>p,
+input[value="noticia5"]:checked~#noticia5>p,
+input[value="noticia6"]:checked~#noticia6>p,
+input[value="noticia7"]:checked~#noticia7>p,
+input[value="noticia8"]:checked~#noticia8>p,
+input[value="noticia9"]:checked~#noticia9>p,
+input[value="noticia10"]:checked~#noticia10>p,
+input[value="noticia11"]:checked~#noticia11>p,
+input[value="noticia12"]:checked~#noticia12>p,
+input[value="noticia13"]:checked~#noticia13>p,
+input[value="noticia14"]:checked~#noticia14>p,
+input[value="noticia15"]:checked~#noticia15>p,
+input[value="noticia16"]:checked~#noticia16>p {
+    display: inline;
+}
+
 
 /* El movil */
 
@@ -66,24 +85,6 @@ p {
     p {
         display: none;
     }
-    input[value="noticia1"]:checked~#noticia1>p,
-    input[value="noticia2"]:checked~#noticia2>p,
-    input[value="noticia3"]:checked~#noticia3>p,
-    input[value="noticia4"]:checked~#noticia4>p,
-    input[value="noticia5"]:checked~#noticia5>p,
-    input[value="noticia6"]:checked~#noticia6>p,
-    input[value="noticia7"]:checked~#noticia7>p,
-    input[value="noticia8"]:checked~#noticia8>p,
-    input[value="noticia9"]:checked~#noticia9>p,
-    input[value="noticia10"]:checked~#noticia10>p,
-    input[value="noticia11"]:checked~#noticia11>p,
-    input[value="noticia12"]:checked~#noticia12>p,
-    input[value="noticia13"]:checked~#noticia13>p,
-    input[value="noticia14"]:checked~#noticia14>p,
-    input[value="noticia15"]:checked~#noticia15>p,
-    input[value="noticia16"]:checked~#noticia16>p {
-        display: inline;
-    }
     .cabecera__opciones--sub>li {
         width: 97%;
         text-align: center;
@@ -98,7 +99,7 @@ p {
         text-align: center;
         height: 100%;
         min-height: 1000px;
-        width: 44%;
+        width: 34%;
         padding-top: 15vh;
         background: linear-gradient(to right, black, rgba(0, 0, 0, 0.315));
         box-shadow: 0 0 1.5em #000000a1;
@@ -106,7 +107,6 @@ p {
         -moz-box-shadow: 0 0 1.5em #000000a1;
     }
     .noticiario__noticia {
-        height: 50px;
         padding: 29px;
         margin-left: 15px;
         text-align: left;
@@ -116,6 +116,9 @@ p {
         cursor: pointer;
         background: none;
         border-bottom: 15px solid rgba(0, 0, 0, 0);
+    }
+    .noticiario__noticia>label>span>p {
+        display: none;
     }
     .noticiario__noticia:hover {
         background-color: rgba(26, 26, 26, 0.767);
@@ -152,9 +155,11 @@ p {
         bottom: 30px;
         margin-bottom: 0px;
         height: 79vh;
-        right: 1vw;
+        right: 0px;
         width: 55.5%;
         padding: 0px;
+        padding-left: 5%;
+        padding-right: 5%;
         opacity: 1;
         animation-name: fadeInOpacity;
         animation-iteration-count: 1;
@@ -172,14 +177,6 @@ p {
         100% {
             opacity: 1;
         }
-    }
-    .noticia__leerMas--checkBox:checked~.noticiario__noticia>div {
-        top: -84vh;
-        padding: 100px 10% 5% 10%;
-        display: inline-block;
-        height: 515px;
-        margin: 0px;
-        overflow: scroll;
     }
     .noticia__leerMas--checkBox:checked~.noticiario__noticia:hover {
         padding: 0px;
