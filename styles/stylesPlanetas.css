@@ -70,7 +70,9 @@
 /* El Movil */
 
 @media (max-width: 767px) {
-    body {}
+    body {
+        width: 100vw;
+    }
     p {
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
