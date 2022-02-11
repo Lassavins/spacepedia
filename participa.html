@@ -18,20 +18,46 @@
         <label for="activar" class="checkbox__boton">=</label>
         <div class="cabecera">
 
-            <img src="imgs/logo.png" alt="" class="cabecera__logo">
+            <a href="index.html"><img src="./imgs/logos/logo.png" alt="" class="cabecera__logo"></a>
             <ul class="cabecera__opciones">
-                <li><a href="index.html">Noticias</a></li>
+                <li><a href="index.html" style="color:white">Noticias</a></li>
                 <li><a href="galaxias.html">Galaxias</a></li>
                 <li><a href="planetas.html">Planetas</a></li>
                 <li><a href="ciencia.html">Ciencia</a></li>
-                <li><a href="participa.html" style="color:white" id="participa">Participa</a></li>
+                <li><a href="participa.html" id="participa">Participa</a></li>
             </ul>
-            <hr class="cabecera__separador">
+            <ul class="cabecera__opciones--sub" id="subNoticias">
+                <li></li>
+            </ul>
         </div>
+        <div class="oscurecedor"></div>
     </div>
     <!-- fin header -->
     <div class="contenido">
-        <h1>Participa</h1>
+
+        <form action="" class="formParticipa">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Email:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="conocimiento">Nivel de conocimiento:</label><br>
+            <label for="radio-group1">Iniciado</label>
+            <input name="radio-group1" type="radio" value="iniciado">
+            <label for="radio-group1">Intermedio</label>
+            <input name="radio-group1" type="radio" value="intermedio">
+            <label for="radio-group1">Experto</label>
+            <input name="radio-group1" type="radio" value="experto">
+            <label for="submit"></label><br>
+            <input type="submit" value="Enviar" id="botonEnviar">
+
+        </form>
+    </div>
+
+    <div class="descripcion">
+        <h1>Sube a bordo.</h1>
+        <h3>Forma parte de Spacepedia.</h3>
+        <hr>
+        <p>Tempor sed non sint. liquip ex est eu, mollit nisi incididunt deserunt excepteur irure do, non do pariatur officia officia. Eu mollit ad fugiat aliquip sint elit. Anim est ea nisi quis magna irure.</p>
     </div>
 
     <div class="pie">
