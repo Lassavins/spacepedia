@@ -29,6 +29,7 @@
     }
     h3 {
         margin-left: 60%;
+        padding-bottom: 20px
     }
     .galaxia__texto--header {
         padding: 300px 5% 0px 5%;
@@ -102,13 +103,15 @@
         background-image: url(../imgs/galaxias/magallanes.jpeg);
     }
     p {
+        position: relative;
+        top: -57px;
         padding: 7%;
         margin: 2.4vw;
-        border-radius: 50px;
-        backdrop-filter: blur(50px);
-        -webkit-backdrop-filter: blur(50px);
-        background-color: rgba(0, 0, 0, 0.192);
+        background-color: rgba(0, 0, 0, 0.336);
         text-align: justify;
+        box-shadow: 0 0 1.5em #000000a1;
+        -webkit-box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.336);
+        -moz-box-shadow: 0 0 1.5em #000000a1;
     }
     .galaxia {
         top: 0px;
