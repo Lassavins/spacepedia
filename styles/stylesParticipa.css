@@ -38,6 +38,15 @@ input {
     width: 500px;
 }
 
+@media (min-width: 768px) {
+    .reproductor {
+        width: 200px;
+        height: 20px;
+        position: relative;
+        right: -30vw;
+    }
+}
+
 
 /* movil */
 
@@ -48,5 +57,9 @@ input {
     .descripcion {
         position: relative;
         top: -80px;
+    }
+    .reproductor {
+        width: 100px;
+        height: 20px;
     }
 }

@@ -58,7 +58,12 @@ hr {
         background: url(../imgs/galaxias/magallanes.jpeg);
         background-size: cover;
     }
-    #header4>h1 {
+    #header5 {
+        background: url(../imgs/galaxias/andromeda.jpeg);
+        background-size: cover;
+    }
+    #header4>h1,
+    #header5>h1 {
         font-size: 15vw;
     }
     #header4>h3 {
@@ -125,7 +130,8 @@ hr {
     #uno,
     #dos,
     #tres,
-    #cuatro {
+    #cuatro,
+    #cinco {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -142,6 +148,9 @@ hr {
     }
     #cuatro {
         background-image: url(../imgs/galaxias/magallanes.jpeg);
+    }
+    #cinco {
+        background-image: url(../imgs/galaxias/andromeda.jpeg);
     }
     #volverGalaxias {
         display: none;
