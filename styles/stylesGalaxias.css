@@ -1,15 +1,11 @@
 /* General */
 
-.galaxia>.galaxia__texto>hr {
+hr {
     width: 100%;
     border: none;
     border-radius: 15px;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.397);
-}
-
-#subGalaxias>li {
-    animation-duration: 0s;
 }
 
 
@@ -30,6 +26,18 @@
     h3 {
         margin-left: 60%;
         padding-bottom: 20px
+    }
+    .galaxia {
+        width: auto;
+        margin-bottom: -55px;
+    }
+    .galaxia__texto {
+        top: 100px;
+        margin-bottom: 50px;
+    }
+    .galaxia__texto>header {
+        top: 21vw;
+        text-align: left;
     }
     .galaxia__texto--header {
         padding: 300px 5% 0px 5%;
@@ -56,18 +64,6 @@
     #header4>h3 {
         top: -220px;
     }
-    .galaxia {
-        width: auto;
-        margin-bottom: -55px;
-    }
-    .galaxia__texto {
-        top: 100px;
-        margin-bottom: 50px;
-    }
-    .galaxia__texto>header {
-        top: 21vw;
-        text-align: left;
-    }
     #subGalaxias {
         padding-left: 7.5%;
     }
@@ -80,27 +76,6 @@
 /* El grande */
 
 @media (min-width: 768px) {
-    #uno,
-    #dos,
-    #tres,
-    #cuatro {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    #uno {
-        background-image: url(../imgs/galaxias/milkyWay.jpeg);
-    }
-    #dos {
-        background-image: url(../imgs/galaxias/canisMayor.jpeg);
-    }
-    #tres {
-        background-image: url(../imgs/galaxias/enanaSagitario.jpeg);
-    }
-    #cuatro {
-        background-image: url(../imgs/galaxias/magallanes.jpeg);
-    }
     p {
         position: relative;
         font-size: smaller;
@@ -146,6 +121,27 @@
     }
     .separador {
         height: 76vh;
+    }
+    #uno,
+    #dos,
+    #tres,
+    #cuatro {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #uno {
+        background-image: url(../imgs/galaxias/milkyWay.jpeg);
+    }
+    #dos {
+        background-image: url(../imgs/galaxias/canisMayor.jpeg);
+    }
+    #tres {
+        background-image: url(../imgs/galaxias/enanaSagitario.jpeg);
+    }
+    #cuatro {
+        background-image: url(../imgs/galaxias/magallanes.jpeg);
     }
     #volverGalaxias {
         display: none;
