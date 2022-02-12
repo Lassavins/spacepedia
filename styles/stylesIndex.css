@@ -203,6 +203,11 @@ input[value="noticia16"]:checked~#noticia16>p {
     #volverIndex>a {
         background-color: rgba(253, 253, 253, 0.616);
         color: black;
+        z-index: 11;
+    }
+    #volverIndex>a:hover {
+        background-color: black;
+        color: white;
     }
     #subNoticias>li {
         animation-duration: 1.5s;
