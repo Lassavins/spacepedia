@@ -8,6 +8,12 @@ hr {
     background-color: rgba(255, 255, 255, 0.397);
 }
 
+p>img {
+    width: 50vw;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* El movil */
 
@@ -16,6 +22,9 @@ hr {
         padding: 5%;
         background-color: rgba(27, 27, 27, 0.479);
         text-align: justify;
+    }
+    p>img {
+        width: 100%;
     }
     hr {
         display: none;
@@ -70,7 +79,10 @@ hr {
         top: -220px;
     }
     #subGalaxias {
-        padding-left: 7.5%;
+        margin-left: 2.2%;
+    }
+    #subGalaxias>li {
+        font-size: 2.5vw;
     }
     #volverGalaxias>a {
         background-color: rgb(32, 32, 32);

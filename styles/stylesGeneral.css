@@ -43,8 +43,8 @@ hr {
 }
 
 .descripcion {
-    padding: 24px;
-    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: rgba(0, 0, 0, 0.322);
     box-shadow: 0 0 5em #000000a1;
     -webkit-box-shadow: 0 0 5em #000000a1;
@@ -150,6 +150,9 @@ hr {
     h3 {
         font-size: 20px;
         margin-left: 2px;
+    }
+    p {
+        font-size: 18px;
     }
     body {
         background-position: center;
