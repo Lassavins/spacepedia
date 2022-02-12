@@ -1,38 +1,36 @@
-#subCiencia>li {
-    animation-duration: 0s;
+body {
+    background: url(../imgs/ciencia/whiteHole.png);
 }
 
-#agujeroNegro {
-    background: url(../imgs/ciencia/blackHole.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+label {
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.295);
+    box-shadow: 0 0 1.5em #000000a1;
+    -webkit-box-shadow: 0 0 1em #000000a1;
+    -moz-box-shadow: 0 0 1.5em #000000a1;
 }
 
-#agujeroNegro>.fenomeno__texto {
-    position: relative;
-    top: 250px;
-    width: 40%;
-    margin-left: 5%;
-    height: 250px;
-    overflow: scroll;
+video {
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 78px;
 }
 
-#agujeroNegro>.fenomeno__texto>p {
-    margin-bottom: 5px;
-}
 
-.fenomeno {
-    width: 100%;
-    height: auto;
-}
+/* movil */
 
-.fenomeno__texto {
-    padding: 5%;
-    border-radius: 50px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.192);
-    text-align: justify;
+@media (max-width: 767px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    .pie {
+        position: relative;
+        top: -28px;
+    }
+    video {
+        width: 90vw;
+    }
 }

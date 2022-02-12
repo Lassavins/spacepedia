@@ -99,4 +99,7 @@
     #mercurio {
         margin-top: 100px;
     }
+    #volverPlanetas>a {
+        background-color: rgb(32, 32, 32);
+    }
 }

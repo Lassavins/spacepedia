@@ -48,9 +48,6 @@ input[value="noticia16"]:checked~#noticia16>p {
         border-radius: 100px;
         background-color: rgba(255, 255, 255, 0.39);
     }
-    p {
-        font-size: larger;
-    }
     h1 {
         padding-top: 50px;
         font-size: 7vw;
@@ -149,6 +146,7 @@ input[value="noticia16"]:checked~#noticia16>p {
     input[value="noticia15"]:checked~#noticia15,
     input[value="noticia16"]:checked~#noticia16 {
         background-color: rgba(0, 0, 0, 0.404);
+        cursor: auto;
         display: inline-block;
         text-align: justify;
         position: fixed;
@@ -183,7 +181,13 @@ input[value="noticia16"]:checked~#noticia16>p {
         margin: 0px;
     }
     #volverIndex {
-        display: none;
+        position: fixed;
+        text-align: left;
+        padding-left: 10%;
+    }
+    #volverIndex>a {
+        background-color: black;
+        border: 1px solid gray;
     }
     #subNoticias>li {
         animation-duration: 1.5s;
