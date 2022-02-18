@@ -8,17 +8,12 @@
     color: white;
     text-decoration: none;
     list-style: none;
-    -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
 
 html {
     overflow-x: hidden;
-}
-
-*::-webkit-scrollbar {
-    display: none;
 }
 
 body {
@@ -84,7 +79,6 @@ p {
 .pie {
     z-index: 10;
     background: none;
-    background-color: none;
     backdrop-filter: blur(0px);
     padding: 5px;
     color: rgba(255, 255, 255, 0.568);
@@ -236,15 +230,5 @@ p {
         to {
             opacity: 1;
         }
-    }
-}
-
-@supports (-webkit-touch-callout: none) {
-    /* CSS específico para arreglar fondos en iPad */
-    #uno,
-    #dos,
-    #tres,
-    #cuatro {
-        background-attachment: scroll;
     }
 }

@@ -128,8 +128,6 @@ p>img {
         top: 170px;
         bottom: 1px;
         padding: 50px;
-        overflow: hidden;
-        -ms-overflow-style: none;
         scrollbar-width: none;
     }
     .galaxia__texto--header {
