@@ -99,6 +99,10 @@ input[value="noticia16"]:checked~#noticia16>p {
         width: 97%;
         text-align: center;
     }
+    #arribaIndex {
+        position: relative;
+        top: -1000px;
+    }
 }
 
 
