@@ -2,7 +2,7 @@ body {
     background: url(../imgs/fondos/backgroundParticipa.jpg);
 }
 
-label {
+.contenido>form>label {
     font-weight: bolder;
     background-color: rgba(0, 0, 0, 0.295);
     box-shadow: 0 0 1.5em #000000a1;
