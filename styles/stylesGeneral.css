@@ -42,17 +42,43 @@ hr {
     margin-bottom: 10px;
 }
 
+.hacheUno {
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.hacheTres {
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: left;
+    font-style: italic;
+}
+
+.hacheCuatro {
+    font-size: 10px;
+    padding-bottom: 15px;
+    text-align: left;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.664);
+}
+
 .descripcion {
     padding-left: 10%;
     padding-right: 10%;
-    background-color: rgba(0, 0, 0, 0.322);
-    box-shadow: 0 0 5em #000000a1;
-    -webkit-box-shadow: 0 0 5em #000000a1;
-    -moz-box-shadow: 0 0 5em #000000a1;
+    position: fixed;
+    bottom: 10vh;
+    height: 100px;
 }
 
 .descripcion>h1 {
-    font-size: 80px;
+    font-size: 7vh;
+}
+
+.descripcion>h1,
+h3,
+p {
+    text-shadow: 0px 0px 10px #000000;
 }
 
 .pie {
@@ -126,7 +152,8 @@ hr {
     h1 {
         font-size: 20vw;
     }
-    p {
+    p,
+    .pe {
         font-size: 20px;
     }
     .volverArriba {
@@ -149,15 +176,10 @@ hr {
         z-index: 0;
     }
     .descripcion {
-        height: 35%;
+        position: static;
     }
     .descripcion>h1 {
         font-size: 10vw;
-    }
-    .formParticipa {
-        width: 100vw;
-        position: relative;
-        top: -80px;
     }
     .rrss {
         margin: 5px;
@@ -176,7 +198,8 @@ hr {
         font-size: 20px;
         margin-left: 2px;
     }
-    p {
+    p,
+    .pe {
         font-size: 18px;
     }
     body {

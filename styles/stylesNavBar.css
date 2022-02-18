@@ -157,6 +157,7 @@
     }
     .cabecera__logo {
         width: 300px;
+        margin-top: 5px;
     }
     .cabecera__opciones {
         float: right;
