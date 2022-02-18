@@ -12,15 +12,18 @@ p>img {
     width: 50vw;
     display: block;
     margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 5em #000000a1;
+    -webkit-box-shadow: 0 0 5em #000000a1;
+    -moz-box-shadow: 0 0 5em #000000a1;
 }
 
 
 /* El movil */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     p {
         padding: 5%;
-        background-color: rgba(27, 27, 27, 0.479);
         text-align: justify;
     }
     p>img {
@@ -99,11 +102,8 @@ p>img {
         top: -57px;
         padding: 7%;
         margin: 2.4vw;
-        background-color: rgba(0, 0, 0, 0.336);
         text-align: justify;
-        box-shadow: 0 0 1.5em #000000a1;
-        -webkit-box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.336);
-        -moz-box-shadow: 0 0 1.5em #000000a1;
+        text-shadow: 0px 0px 10px #000000;
     }
     .galaxia {
         top: 0px;
@@ -137,7 +137,7 @@ p>img {
         margin-bottom: 3.7vh;
     }
     .separador {
-        height: 76vh;
+        height: 74vh;
     }
     #uno,
     #dos,

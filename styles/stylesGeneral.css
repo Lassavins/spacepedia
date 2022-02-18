@@ -43,8 +43,8 @@ hr {
 }
 
 .descripcion {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: rgba(0, 0, 0, 0.322);
     box-shadow: 0 0 5em #000000a1;
     -webkit-box-shadow: 0 0 5em #000000a1;
@@ -60,13 +60,26 @@ hr {
     background: none;
     background-color: none;
     backdrop-filter: blur(0px);
-    text-align: right;
-    padding: 0px;
+    padding: 5px;
     color: rgba(255, 255, 255, 0.568);
     font-style: italic;
     font-size: 12px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.pie__texto {
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.rrss {
+    width: 25px;
+    opacity: 0.5;
+}
+
+.rrss:hover {
+    opacity: 1;
 }
 
 .volverArriba {
@@ -103,23 +116,28 @@ hr {
 
 /* movil */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: scroll;
     }
+    h1 {
+        font-size: 20vw;
+    }
     p {
-        font-size: larger;
+        font-size: 20px;
     }
     .volverArriba {
         position: fixed;
         bottom: 0px;
+        text-align: right;
         z-index: 10;
         margin-bottom: 50px;
     }
     .volverArriba>a {
+        margin-right: 5%;
         color: white;
         background-color: black;
     }
@@ -130,13 +148,20 @@ hr {
     #oscurecedor__abajo {
         z-index: 0;
     }
+    .descripcion {
+        height: 35%;
+    }
     .descripcion>h1 {
-        font-size: 60px;
+        font-size: 10vw;
     }
     .formParticipa {
         width: 100vw;
         position: relative;
         top: -80px;
+    }
+    .rrss {
+        margin: 5px;
+        border: 1px solid rgba(255, 0, 0, 0);
     }
 }
 
@@ -169,6 +194,25 @@ hr {
         position: fixed;
         bottom: -5px;
         right: 10px;
+    }
+    .rrss {
+        display: block;
+        margin-left: auto;
+        padding: 5%;
+    }
+    .planetas__descripcionA,
+    #header1,
+    .descripcion {
+        animation-duration: 2s;
+        animation-name: aparece;
+    }
+    @keyframes aparece {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }
 

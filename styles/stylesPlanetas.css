@@ -32,16 +32,6 @@
         width: 20%;
         top: -700px;
         margin-left: 45vw;
-        animation-duration: 3s;
-        animation-name: aparece;
-    }
-    @keyframes aparece {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
     }
     .planetas__planeta--imagenB {
         width: 900px;
@@ -69,7 +59,7 @@
 
 /* El Movil */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     p {
         padding-top: 8%;
         background-color: rgba(27, 27, 27, 0.479);
