@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/stylesParticipa.css">
     <link rel="stylesheet" href="styles/stylesNavBar.css">
     <link rel="stylesheet" href="styles/stylesGeneral.css">
@@ -42,19 +42,19 @@
     <!-- fin header -->
     <div class="contenido">
 
-        <form action="" class="formParticipa">
+        <form action="participa.html" class="formParticipa">
             <label for="fname">Nombre:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Email:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="conocimiento">Nivel de conocimiento:</label><br>
-            <label for="radio-group1">Iniciado</label>
-            <input name="radio-group1" type="radio" value="iniciado">
-            <label for="radio-group1">Intermedio</label>
-            <input name="radio-group1" type="radio" value="intermedio">
-            <label for="radio-group1">Experto</label>
-            <input name="radio-group1" type="radio" value="experto">
-            <label for="submit"></label><br>
+            <input type="text" id="lname" name="lname" pattern="[a-z0-9_-]+@[a-z0-9+%]+\.[a-z]{2,4}"><br>
+            <label>Nivel de conocimiento:</label><br>
+            <label for="conoc1">Iniciado</label>
+            <input name="radio-group1" type="radio" value="iniciado" id="conoc1">
+            <label for="conoc2">Intermedio</label>
+            <input name="radio-group1" type="radio" value="intermedio" id="conoc2">
+            <label for="conoc3">Experto</label>
+            <input name="radio-group1" type="radio" value="experto" id="conoc3">
+            <label for="botonEnviar"></label><br>
             <input type="submit" value="Enviar" id="botonEnviar">
 
         </form>
