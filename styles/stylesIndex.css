@@ -189,6 +189,7 @@ input[value="noticia16"]:checked~#noticia16>.pe {
         text-align: left;
         margin-left: 12.5vw;
         z-index: 11;
+        width: 140px;
     }
     #volverIndex>a {
         background-color: black;
