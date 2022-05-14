@@ -1,0 +1,46 @@
+body {
+    background-image: url(../imgs/fondos/spainSpace.jpeg);
+}
+
+.intraDatos {
+    background-color: rgba(0, 0, 0, 0.489);
+    width: 100%;
+    height: 50%;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    overflow: scroll;
+}
+
+.intraDatos>h1 {
+    padding: 5%;
+}
+
+.intraDatos:hover {
+    background-color: rgba(0, 0, 0, 0.732);
+    transition: all 0.5s ease-out;
+}
+
+.datos {
+    width: 50%;
+    margin: 10px;
+}
+
+.contenedorDatos {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 85vh;
+}
+
+
+/* movil */
+
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+}
