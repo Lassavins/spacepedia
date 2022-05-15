@@ -2,38 +2,51 @@ body {
     background-image: url(../imgs/fondos/spainSpace.jpeg);
 }
 
-.intraDatos {
-    background-color: rgba(0, 0, 0, 0.489);
-    width: 100%;
-    height: 50%;
-    border-radius: 50px;
-    margin-bottom: 15px;
-    transition: all 0.5s ease-out;
-    text-align: center;
-    overflow: scroll;
-}
-
-.intraDatos>h1 {
-    padding: 5%;
-}
-
-.intraDatos:hover {
-    background-color: rgba(0, 0, 0, 0.732);
-    transition: all 0.5s ease-out;
-}
-
-.datos {
-    width: 50%;
-    margin: 10px;
-}
-
-.contenedorDatos {
-    display: flex;
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    width: 100%;
-    height: 85vh;
+@media (min-width:768px) {
+    #elGrande {
+        margin: 10px;
+        height: 100%;
+    }
+    .imgRegistros {
+        width: 80%;
+        border-radius: 15px;
+        transition: all 0.5s ease-out;
+        margin-top: 25px;
+    }
+    .imgRegistros:hover {
+        width: 82%;
+        transition: all 0.5s ease-out;
+    }
+    .intraDatos {
+        background-color: rgba(0, 0, 0, 0.489);
+        width: 100%;
+        height: 50%;
+        border-radius: 50px;
+        margin-bottom: 15px;
+        transition: all 0.5s ease-out;
+        text-align: center;
+        overflow: scroll;
+    }
+    h1 {
+        padding: 5%;
+        padding-bottom: 0px;
+    }
+    .intraDatos:hover {
+        background-color: rgba(0, 0, 0, 0.732);
+        transition: all 0.5s ease-out;
+    }
+    .datos {
+        width: 50%;
+        margin: 10px;
+    }
+    .contenedorDatos {
+        display: flex;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        width: 100%;
+        height: 85vh;
+    }
 }
 
 
@@ -42,5 +55,44 @@ body {
 @media (max-width: 768px) {
     body {
         background-image: none;
+    }
+    #elGrande {
+        position: absolute;
+        top: 120px;
+        width: 100%;
+    }
+    .cabecera__opciones--sub>li {
+        font-size: 2.19vw;
+    }
+    .datos {
+        width: 100%;
+        padding: 3%;
+    }
+    .contenedorDatos {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        padding-top: 55vh;
+        height: 80vh;
+    }
+    .intraDatos {
+        background-color: rgba(49, 49, 49, 0.393);
+        float: left;
+        width: 45%;
+        margin: 1%;
+        height: 40vh;
+        border-radius: 50px;
+        transition: all 0.5s ease-out;
+        text-align: center;
+        overflow: scroll;
+    }
+    .intraDatos>h1,
+    .intraDatos>span>h1 {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    img {
+        width: 100%;
     }
 }
